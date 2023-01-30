@@ -1,0 +1,128 @@
+/* grid */
+.content0
+{ 
+  display: flex;
+  justify-content: flex-end;
+}
+.container 
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  
+  /* items */
+  .container > * {
+    color: #353535;
+    font-size: 1.2em;
+    line-height: 1.5;
+    padding: 20px;
+    background: #d0cfc5;
+  }
+  
+  /* nav styles */
+  .container nav 
+  {
+    margin-left: 30%;
+    
+  }
+  
+  nav ul 
+  {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a 
+  {
+    color:black;
+    text-decoration: none;
+    padding: 2%;
+    font-size: xx-large;
+  }
+  
+ 
+  
+
+
+  
+  /* media query for grid layout */
+  @media only screen and (min-width: 600px) {
+      
+    /* grid */
+    .container 
+    {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
+    /* specific item styles */
+    .container header,
+    .container nav,
+    .container footer 
+    {
+      grid-column: span 4;
+    }
+    .container #article0
+    {
+      grid-column: span 3;
+    }
+    .container #article1 
+    {
+      grid-column: span 4;
+    }
+    .container #article2
+    {
+      grid-column: span 4;
+    }
+    
+    .container #article3
+    {
+      grid-column: span 4;
+    }
+    
+    .container #article4
+    {
+      grid-column: span 4;
+    }
+    
+    /* nav styles */
+    nav ul li {
+      display: inline-block;
+      padding: 0 20px 0 0;
+    }
+    
+    /* hide toggle */
+    .toggle {
+      display: none;
+    }
+    
+  }
+  
+  /* media query for nav styles */
+  @media only screen and (max-width: 599px) {
+    
+      #nav {
+        transition: transform .3s ease-in-out;
+        top: 0;
+        bottom: 0;   
+        min-height: 100vh; /* override Safari bug */
+        position: fixed; /* or choose `absolute` depending on desired behavior*/
+        width: 300px;
+        left: -340px;
+      }
+    
+      #nav:target {     
+        transform: translateX(340px);
+      }
+    
+      .close {
+        text-align: right;
+        display: block;
+        text-decoration: none;
+        font-size: 3em;
+        position: relative;
+        top: -30px;
+      }
+    
+  }
