@@ -48,7 +48,7 @@
 
   
   /* media query for grid layout */
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 300px) {
       
     /* grid */
     .container 
@@ -100,7 +100,7 @@
   }
   
   /* media query for nav styles */
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 400px) {
     
       #nav {
         transition: transform .3s ease-in-out;
@@ -126,3 +126,118 @@
       }
     
   }
+.titre
+{
+ font-size: 50px;
+}
+  #nav
+{
+    transition: 0.4s;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1000;
+   padding-top: 4%;
+   
+}
+#nav a 
+{
+    color: black;
+    text-align: center;
+    padding: 1%;
+    text-decoration: none;
+    line-height: 25px;
+    border-radius: 5px;
+    font-size: 40px;
+}
+#nav a:hover 
+{
+    background-color:black;
+    color: white;
+    padding: 2%;
+}
+/*/////////////////////////////Text///////////////////////////////////////////////*/
+/* Animation */
+/* text animation  effet machine à ecrire*/
+@keyframes animated-text
+{
+    from{width: 0;}
+    to{ width: 100%;}
+}
+.hello
+{
+    animation:
+    animated-text 2s steps(20,end) 1s 1 normal both,
+    type 600ms steps(30, end) 8;
+}
+.hello1
+{
+    animation:
+    animated-text 2s steps(20,end) 3s 1 normal both,
+    taper 600ms steps(20,end) 8 ;
+}
+.hello2
+{
+    animation:
+    animated-text 2s steps(20,end) 5s 1 normal both,
+    taper 600ms steps(20,end) 8;
+}
+.hello3
+{
+    animation:
+    animated-text 2s steps(20,end) 7s 1 normal both,
+    taper 600ms steps(20,end) 8;
+}
+
+/*2.//////////////content time ////////////////////*/
+/*3.//////////////Navbar ////////////////////*/
+#navbar 
+{
+    transition: 0.4s;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1000;
+    margin-left: 30%;
+    padding-top: 5%;
+    margin-top: 1%;
+}
+#navbar a 
+{
+    color: black;
+    text-align: center;
+    padding: 1%;
+    text-decoration: none;
+    line-height: 25px;
+    border-radius: 5px;
+    font-size: 40%;
+}
+#navbar a:hover 
+{
+    background-color:black;
+    color: white;
+    padding: 2%;
+}
+.hello ,.hello1,.hello2,.hello3
+{
+
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 20px;
+  color: black;
+  
+}
+
+.nom
+{
+ font-size: 6rem;
+}
+.fonction
+{
+ font-size: 3rem;
+}
+img .octo
+{
+  width: 200%;
+}
