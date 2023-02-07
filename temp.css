@@ -1,128 +1,374 @@
-/* grid */
-.content0
-{ 
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Merriweather");
+html {
+  cursor: url(./cursor.svg), default;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: beige;
+  background-image: linear-gradient(rgb(221, 221, 221) 0.1em, transparent 0em), linear-gradient(90deg, rgb(110, 136, 161) 0em, transparent 0.1em);
+  background-size: 3em 3em;
+}
+
+.content0 {
   display: flex;
   justify-content: flex-end;
 }
-.container 
-{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+.container > * {
+  /*color: #353535;*/
+  font-size: 1.2em;
+  line-height: 1.5;
+  padding: 20px;
+  /*background: #d0cfc5;*/
+}
+.container .titre {
+  font-size: 5vh;
+  padding-left: 10%;
+}
+.container nav {
+  margin-left: 30%;
+}
+.container nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container nav ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 2%;
+  font-size: 5vh;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
   }
-  
-  /* items */
-  .container > * {
-    color: #353535;
-    font-size: 1.2em;
-    line-height: 1.5;
-    padding: 20px;
-    background: #d0cfc5;
+  .container header, .container nav, .container footer {
+    grid-column: span 4;
   }
-  
-  /* nav styles */
-  .container nav 
-  {
-    margin-left: 30%;
-    
-  }
-  
-  nav ul 
-  {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav a 
-  {
-    color:black;
-    text-decoration: none;
-    padding: 2%;
+  .container #article0 {
+    grid-column: span 3;
+    padding-left: 15%;
     font-size: xx-large;
   }
-  
- 
-  
-
-
-  
-  /* media query for grid layout */
-  @media only screen and (min-width: 600px) {
-      
-    /* grid */
-    .container 
-    {
-      grid-template-columns: repeat(4, 1fr);
-    }
-    
-    /* specific item styles */
-    .container header,
-    .container nav,
-    .container footer 
-    {
-      grid-column: span 4;
-    }
-    .container #article0
-    {
-      grid-column: span 3;
-    }
-    .container #article1 
-    {
-      grid-column: span 4;
-    }
-    .container #article2
-    {
-      grid-column: span 4;
-    }
-    
-    .container #article3
-    {
-      grid-column: span 4;
-    }
-    
-    .container #article4
-    {
-      grid-column: span 4;
-    }
-    
-    /* nav styles */
-    nav ul li {
-      display: inline-block;
-      padding: 0 20px 0 0;
-    }
-    
-    /* hide toggle */
-    .toggle {
-      display: none;
-    }
-    
+  .container #article1 {
+    grid-column: span 4;
   }
-  
-  /* media query for nav styles */
-  @media only screen and (max-width: 599px) {
-    
-      #nav {
-        transition: transform .3s ease-in-out;
-        top: 0;
-        bottom: 0;   
-        min-height: 100vh; /* override Safari bug */
-        position: fixed; /* or choose `absolute` depending on desired behavior*/
-        width: 300px;
-        left: -340px;
-      }
-    
-      #nav:target {     
-        transform: translateX(340px);
-      }
-    
-      .close {
-        text-align: right;
-        display: block;
-        text-decoration: none;
-        font-size: 3em;
-        position: relative;
-        top: -30px;
-      }
-    
+  .container #article2 {
+    grid-column: span 4;
+    padding: 5px;
+    max-width: 950px;
+    width: 95%;
+    margin: 20px auto;
   }
+  .container #article2 .titre {
+    padding: 0 15px;
+  }
+  .container #article3 {
+    grid-column: span 4;
+  }
+  .container #article4 {
+    grid-column: span 4;
+  }
+  .container nav ul li {
+    display: inline-block;
+    padding: 0 20px 0 0;
+  }
+  .container .toggle {
+    display: none;
+  }
+}
+@media only screen and (max-width: 599px) {
+  #nav {
+    transition: transform 0.3s ease-in-out;
+    top: 0;
+    bottom: 0;
+    min-height: 100vh;
+    position: fixed;
+    width: 300px;
+    left: -340px;
+  }
+  #nav:target {
+    transform: translateX(340px);
+  }
+  .close {
+    text-align: right;
+    display: block;
+    text-decoration: none;
+    font-size: 3em;
+    position: relative;
+    top: -30px;
+  }
+}
+.cards {
+  margin: auto;
+  background: #fefefe;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1), 3px 5px 20px rgba(0, 0, 0, 0.2);
+  width: 768px;
+  height: 550px;
+  padding: 5%;
+}
+.cards h3 {
+  font-size: 3vh;
+}
+.cards h4 {
+  font-size: 5vh;
+}
+
+/***************************************************************************************************/
+.columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 5px 0;
+}
+.columns .column {
+  flex: 1;
+  border: 1px solid gray;
+  margin: 2px;
+  padding: 10px;
+}
+.columns .column:first-child {
+  margin-left: 0;
+}
+.columns .column:last-child {
+  margin-right: 0;
+}
+
+/****************************************colonne 3 effet****************/
+.col3 li {
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.col3 .html h4,
+.col3 .css h4,
+.col3 .illustrator h4,
+.col3 .trello h4 {
+  font-size: xx-large;
+}
+.col3 .javascript h4,
+.col3 .photoshop h4,
+.col3 .indesign h4,
+.col3 .cms h4 {
+  font-size: x-large;
+}
+.col3 .php h4,
+.col3 .csharp h4 {
+  font-size: medium;
+}
+.col3 .python h4 {
+  font-size: medium;
+}
+.col3 .html p,
+.col3 .css p,
+.col3 .illustrator p,
+.col3 .trello p,
+.col3 .javascript p,
+.col3 .photoshop p,
+.col3 .indesign p,
+.col3 .cms p,
+.col3 .php p,
+.col3 .csharp p,
+.col3 .python p {
+  display: none;
+}
+.col3 .html:hover p,
+.col3 .css:hover p,
+.col3 .illustrator:hover p,
+.col3 .trello:hover p,
+.col3 .javascript:hover p,
+.col3 .photoshop:hover p,
+.col3 .indesign:hover p,
+.col3 .cms:hover p,
+.col3 .php:hover p,
+.col3 .csharp:hover p,
+.col3 .python:hover p {
+  display: block;
+  color: red;
+  font-size: medium;
+}
+
+.html h4,
+.css h4,
+.illustrator h4,
+.trello h4 {
+  font-size: xx-large;
+}
+
+.javascript h4,
+.photoshop h4,
+.indesign h4,
+.cms h4 {
+  font-size: x-large;
+}
+
+.php h4,
+.csharp h4 {
+  font-size: medium;
+}
+
+.python h4 {
+  font-size: medium;
+}
+
+.html p,
+.css p,
+.illustrator p,
+.trello p,
+.javascript p,
+.photoshop p,
+.indesign p,
+.cms p,
+.php p,
+.csharp p,
+.python p {
+  display: none;
+}
+
+.html:hover p,
+.css:hover p,
+.illustrator:hover p,
+.trello:hover p,
+.javascript:hover p,
+.photoshop:hover p,
+.indesign:hover p,
+.cms:hover p,
+.php:hover p,
+.csharp:hover p,
+.python:hover p {
+  display: block;
+  color: red;
+  font-size: 30px;
+}
+
+/**********************************************portfolio********************************************************/
+#portfolio {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2px;
+}
+
+.project {
+  position: relative;
+  background: grey;
+  overflow: hidden;
+}
+.project img {
+  position: absolute;
+  opacity: 0.9;
+  width: 500px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.project p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  padding: 1em 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 3;
+}
+.project .grid__title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  bottom: 0;
+  font-weight: 100;
+  font-size: 0.8em;
+  z-index: 3;
+  text-transform: uppercase;
+  color: #474545;
+  letter-spacing: 2px;
+}
+
+.project:hover .grid__overlay {
+  transform: translateY(0%);
+}
+
+.grid__overlay {
+  background: rgba(103, 103, 103, 0.9);
+  height: 100%;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transform: translateY(101%);
+  transition: all 0.3s ease-in-out;
+}
+.grid__overlay button {
+  background: none;
+  outline: none;
+  font-weight: 100;
+  letter-spacing: 2px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.grid__overlay button:hover {
+  transition: all 0.3s ease-in-out;
+  background: #ffffff;
+  color: grey;
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: fixed;
+  background: rgba(71, 69, 69, 0.7);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  z-index: 3;
+}
+
+.overlay.open {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.overlay__inner {
+  background: #ffffff;
+  max-width: 700px;
+  padding: 20px;
+  position: relative;
+  opacity: 1;
+}
+
+.close {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  background: none;
+  outline: 0;
+  color: #474545;
+  border: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.close:hover {
+  color: grey;
+}/*# sourceMappingURL=temp.css.map */

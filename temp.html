@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Antonio&family=Barlow+Semi+Condensed:wght@100&family=Barlow:wght@100&family=Bebas+Neue&family=Fragment+Mono&family=Lobster&family=Orbitron&family=Oswald:wght@200&family=Playfair+Display&family=Roboto+Mono:wght@100&family=Roboto:wght@100;500&family=Silkscreen&family=Sofia+Sans:wght@100&family=Source+Code+Pro&display=swap');
+    </style>
     <link rel="stylesheet" href="temp.css">
     <title>Document</title>
 </head>
@@ -21,11 +24,10 @@
                     <a class="toggle close" href="#">×</a>
                     <ul><!--Navbar version web ⛔ voir comment switcher vers un menu burger en mobile Nav ne fais partie d'aucuns conteneur -->
                 <!--Conteneur 0 heure librairie luxon-->
-                        <a href="#full">Full-stack</a>
-                        <a href="#parcours">Parcours</a>
-                        <a href="#portfolio">Portfolio</a>
-                        <a href="#demain">Demain</a> 
-                        <a href="#home">Menen</a> 
+                     <li><a href="#parcours">Parcours</a></li>
+                     <li><a href="#portfolio">Portfolio</a></li>
+                     <li><a href="#demain">Demain</a></li>
+                     <li> <a href="#home">Menen</a></li>
                     </ul>
                 </nav>
             </header>
@@ -46,10 +48,10 @@
   </aside>
   <section id="article1" >
       <article>
-        <div class="about1">
-            <img src="./views/github.svg" alt="">
-             <h4>Profil</h4>
-              <h3>professionnel</h3>
+        <div class="about1 cards ">
+         
+             <h4 class="card">Profil</h4>
+              <h3 class="card">professionnel</h3>
                <p>
                 Dans mon ancienne vie professionel , on m'appelait "Couteau-suisse" en raison de ma polyvalence et de ma capacité à m'adapter à de nombreuses situations. 
                 J'espère conserver cette philosophie dans ma nouvelle carrière en tant que développeuse full-stack.
@@ -66,7 +68,7 @@
   <section id="article2" >
       <article >
           <!--Section Parcours  -->
-      <div class="content3" id="parcours">
+      <div class="content3 columns" id="parcours">
         <div class="titre2">
           <h1>Parcours</h1>
           <h3 class="sous_titre">Retracez mon parcours ,de la découverte du développement web a ma reconversion.</h3>
@@ -74,7 +76,7 @@
         
 
 <!--colonne 1 parcours⛔  -->
-        <div class="about2 col1">
+        <div class="about2 column">
           <ul class="parcours">
             <h3 class="titre_parcours">
               2022/2023(15 mois)
@@ -116,7 +118,7 @@
           </ul>
         </div>
 <!--colonne 2 parcours⛔  -->
-        <div class="about2 col2">
+        <div class="about2 column">
           <ul class="parcours">
             <h3 class="titre_parcours">
               2021
@@ -146,7 +148,7 @@
           </div>
         </div>
 <!--colonne 2 parcours fin⛔-->
-        <div class="about3 col3">
+        <div class="about3 column">
           <ul class="parcours">
             
               <li class="html">
@@ -203,84 +205,85 @@
 
   <section id="article3">
       <article>
-        <div class="content4" id="portfolio">
-            <div  class="titre3">
-              <h1>Portfolio</h1>
-              <h3 class="sous_titre">Explorez mes réalisations les plus significatives, qui vous donneront des  exemples concrets de mes compétences en tant que développeuse web junior.</h3>
-            </div>
-              <h1 class="front-title">Front</h1>
-    <!--Contenu Portfolio section front ⛔-->
-                
-    <!--grid1 portfolio front-->
-                  <div class="projet1">
-                    <img src="https://images.unsplash.com/photo-1531265726475-52ad60219627?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1191&q=80" alt="">
-    <!-- Bouton d'activation de la fenêtre Modal -->
-                    <button class="viewbutton1">Color mode</button>
-    <!-- The Modal -->
-                    <div id="myModal" class="modal">
-    <!-- Modal content -->
-                      <div class="modal-content">
-                          <span class="close1">x</span>
-                          <h3>Color mode </h3>
-                          <p>
-                          Un rideau de couleur , des color picker ....
-                          <a href="#full">full-stack</a>
-                          </p>
-                      </div>
-                    </div>
-    <!-- fin 1st Modal content -->
-                  </div>
-    <!-- fin  projet1 content -->
-                  <div class="projet2">
-                    <img src="https://images.unsplash.com/photo-1593108409123-2f064dc2397f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTIwfHxibGFjayUyMGRlc2lnbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                    <button class="viewbutton2">design</button>
-    <!-- The Modal -->
-                    <div id="myModal1" class="modal">
-    <!-- Modal content -->
-                        <div class="modal-content">
-                          <span class="close2">x</span>
-                          <h3>Color mode </h3>
-                          <p>
-                          Un rideau de couleur , des color picker ....
-                          <a href="#full">full-stack</a>
-                          </p>
-                        </div>
-                    </div>
-                  </div>
-    <!-- fin  projet2 content -->
-                  <div class="projet3">
-                    <img src="https://images.unsplash.com/photo-1519299445535-de14a55f3496?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
-                    <button class="viewbutton3">Typo</button>
-    <!-- The Modal -->
-                        <div id="myModal2" class="modal">
-    <!-- Modal content -->
-                          <div class="modal-content">
-                          <span class="close3">x</span>
-                          <h3>Color mode </h3>
-                          <p>
-                          Un rideau de couleur , des color picker ....
-                          <a href="#full">full-stack</a>
-                          </p>
-                        </div>
-                      </div>
-                  </div>
-    <!-- fin  projet3 content -->
-                  <div class="projet4">
-                    <img src="https://images.unsplash.com/photo-1512168203104-3910bc2bcd54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
-                    <button class="viewbutton4">Template</button>
-                  </div>
-    <!-- fin  projet4 content -->             
-                  <div class="projet5">
-                    <img src="https://images.unsplash.com/photo-1497515098781-e965764ab601?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1121&q=80" alt="">
-                    <button class="viewbutton5">Animations</button>
-                  </div>
-    <!-- fin  projet5 content -->       
-                  <div class="projet6">
-                    <img src="https://images.unsplash.com/photo-1554227231-54aa5db01c51?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" alt="">
-                    <button class="viewbutton6">composants</button>
-                  </div>
-              
-    </div> 
+      
+  <section id="portfolio">
+    <div class="project">
+      <img class="project__image" src="./bobby-king-hxa5gEAo3YE-unsplash.jpg" />
+      <p>PURE CSS</p>
+      <h3 class="grid__title">UI DESIGN</h3>
+      <div class="grid__overlay">
+        <button class="viewbutton">view more</button>
+      </div>
+    </div>
+    
+    <div class="project">
+      <img class="project__image" src="./bady-abbas-hxi_yRxODNc-unsplash.jpg" />
+      <p>wordpress</p>
+      <h3 class="grid__title">CMS</h3>
+      <div class="grid__overlay">
+        <button class="viewbutton">view more</button>
+      </div>
+    </div>
+    
+    <div class="project">
+      <img class="project__image" src="./adam-birkett-lkNa1eg2d18-unsplash.jpg" />
+      <p>web apps</p>
+      <h3 class="grid__title">WEB-APP ASP </h3>
+      <div class="grid__overlay">
+        <button class="viewbutton">view more</button>
+      </div>
+    </div>
+    
+    <div class="project">
+      <img class="project__image" src="./rob-walsh-82OLcN3uyOU-unsplash.jpg" />
+      <p>daily ui</p>
+      <h3 class="grid__title">JAVASCRIPT PROJETS</h3>
+      <div class="grid__overlay">
+        <button class="viewbutton">view more</button>
+      </div>
+    </div>
+    <div class="project">
+      <img class="project__image" src="./blaz-photo-cZWZjymwI9o-unsplash.jpg" />
+      <p>websites</p>
+      <h3 class="grid__title">WEB-APP SYMFONY</h3>
+      <div class="grid__overlay">
+        <button class="viewbutton">view more</button>
+      </div>
+    </div>
+    
+    <div class="project">
+      <img class="project__image" src="./martino-pietropoli-VSo5d9wlT7s-unsplash.jpg" />
+      <p>pure css</p>
+      <h3 class="grid__title">PURE CSS/SASS</h3>
+      <div class="grid__overlay">
+        <button class="viewbutton">view more</button>
+      </div>
+    </div>
+    
+    <div class="project">
+      <img class="project__image" src="./alexander-shatov-DHl49oyrn7Y-unsplash.jpg" />
+      <p>web apps</p>
+      <h3 class="grid__title">PYTHON</h3>
+      <div class="grid__overlay">
+        <button class="viewbutton">view more</button>
+      </div>
+    </div>
+    
+    <div class="project">
+      <img class="project__image" src="./andrew-kliatskyi-mkoxQ99o-_Y-unsplash.jpg" />
+      <p>daily ui</p>
+      <h3 class="grid__title">PROCESSING</h3>
+      <div class="grid__overlay">
+        <button class="viewbutton">view more</button>
+      </div>
+    </div>
+    <div class="overlay">
+      <div class="overlay__inner">
+        <button class="close">close X</button>
+        <img>
+      </div>
+    </div>
+  </section> 
       </article>
   </section>
 
@@ -295,8 +298,10 @@
          
         </div>
         
-        <div class="cadre3">
-         <p class="about5">
+        <div class="cadre3 cards">
+          <div class="card-content"></div>
+         <p class="about5 ">
+          
           Interèssée par les technologies mais aussi par ce qui permet de concilier performance et respect de l'environnement.
           Si la durabilité est en enjeux écologique pour la planète et pour ceux qui l’habitent c’est aussi un facteur économique important dans le monde entier. 
           Pratiquement aucune entreprise ne y peut échapper aujourd'hui.
@@ -320,5 +325,5 @@
 </div>
 <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>  
 <script src="./time.js"></script>
-</body>
+<script src="./portfolio.js"></script>
 </html>
