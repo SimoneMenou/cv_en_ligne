@@ -7,34 +7,35 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Antonio&family=Barlow+Semi+Condensed:wght@100&family=Barlow:wght@100&family=Bebas+Neue&family=Fragment+Mono&family=Lobster&family=Orbitron&family=Oswald:wght@200&family=Playfair+Display&family=Roboto+Mono:wght@100&family=Roboto:wght@100;500&family=Silkscreen&family=Sofia+Sans:wght@100&family=Source+Code+Pro&display=swap');
     </style>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="temp.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="banner.css">
+    <title>I am just a baby junior</title>
 </head>
 <body>
-    <div class="support-grid"></div>
-        <div class="container">
-            <header role="banner">
-                <h2 class="titre">Site CV </h2>
-                <a class="toggle open" href="#nav">open</a>
-                    <!--Conteneur 0 heure librairie luxon-->
-                        <div class="content0">
-                        <div class="time1"><output>00:00:00</output></div> 
-                        </div>
-                <nav id="nav" role="navigation">  
+    <div class="container">
+            <header class="content0" role="banner">
+              <a class="toggle open" href="#nav">open</a>
+                    
+                
+                  <nav id="nav" role="navigation">  
                     <a class="toggle close" href="#">×</a>
                     <ul><!--Navbar version web ⛔ voir comment switcher vers un menu burger en mobile Nav ne fais partie d'aucuns conteneur -->
-                <!--Conteneur 0 heure librairie luxon-->
-                     <li><a href="#parcours">Parcours</a></li>
-                     <li><a href="#portfolio">Portfolio</a></li>
-                     <li><a href="#demain">Demain</a></li>
-                     <li> <a href="#home">Menen</a></li>
+                      <!--Conteneur 0 heure librairie luxon-->
+                      <li><a href="#article0">MENEN</a></li>
+                      <li><a href="#article1">PROFIL</a></li>
+                      <li><a href="#parcours">PARCOURS</a></li>
+                      <li> <a href="#portfolio">PORTFOLIO</a></li>
+                      <li> <a href="#demain">DEMAIN</a></li>
                     </ul>
-                </nav>
+                  </nav>
+                  <!--Conteneur 0 heure librairie luxon-->
+                  <div class="time1"><output>00:00:00</output></div> 
             </header>
   <section id="article0" >
       <article>
-        
-        <p class="hello">Hello world ! Bienvenue sur mon site cv.</p>
+        <p class="hello"> Hello world ! </p>
+        <p class="hello0">Bienvenue sur mon site cv.</p>  
         <p class="hello1">Vous trouverez ici un aperçu de mes projets, ainsi que mon cv.</p>
         <p class="hello2">J'éspère qu'il vous plaira.</p>
         <p class="hello3"> Bonne visite !</p>
@@ -42,42 +43,39 @@
         <h3 class="fonction">Full-stack developper junior</h3>
       </article>
   </section>
-
   <aside>
     <img src="./laptop3.gif" alt="" class="octo">
   </aside>
   <section id="article1" >
       <article>
         <div class="about1 cards ">
-         
-             <h4 class="card">Profil</h4>
-              <h3 class="card">professionnel</h3>
-               <p>
+          <h4 class="card">Profil</h4>
+            <h3 class="card">professionnel</h3>
+              <p>
                 Dans mon ancienne vie professionel , on m'appelait "Couteau-suisse" en raison de ma polyvalence et de ma capacité à m'adapter à de nombreuses situations. 
                 J'espère conserver cette philosophie dans ma nouvelle carrière en tant que développeuse full-stack.
                 La découverte du développement web m'a immédiatement attirée grâce à l'aspect visuel et interactif qu'il offre. 
                 Cependant, j'ai rapidement réalisé qu'il y avait bien d'autres aspects fascinants à explorer, tels que les bases de données, les requêtes vers le serveur
                 et la structure d'une application. Curieuse et polyvalente, j'ai un peu plus d'affinités avec le développement front-end, 
                 mais j'ai également fait le choix de me former en back-end pour devenir une développeuse full-stack afin dêtre capable de répondre à tous les besoins techniques d'un , d'une cliente.
-      
               </p>
-             </div>
+          </div>
       </article>
   </section>
 
   <section id="article2" >
       <article >
-          <!--Section Parcours  -->
-      <div class="content3 columns" id="parcours">
+       
         <div class="titre2">
-          <h1>Parcours</h1>
+           <h1>Parcours</h1>
           <h3 class="sous_titre">Retracez mon parcours ,de la découverte du développement web a ma reconversion.</h3>
         </div>
-        
-
-<!--colonne 1 parcours⛔  -->
+      <!--Section Parcours  -->
+      <div class="content3 columns" id="parcours">
+       
+        <!--colonne 1 parcours⛔  -->
         <div class="about2 column">
-          <ul class="parcours">
+        <ul class="parcours">
             <h3 class="titre_parcours">
               2022/2023(15 mois)
               Formation qualifiante 
@@ -137,7 +135,7 @@
               2006
               C.E.S.I Art plastiques Institut Saint-Luc
             </h3>
-          <div class="cadre2">
+          <div class="card">
               <h3>STAGE</h3>
               <p>
                 Actuellement je poursuis ma formation chez Interface 3 celle-ci se terminant
@@ -199,12 +197,17 @@
           </ul> 
         </div>
       </div>
+  
       </article>
   </section>
 
 
   <section id="article3">
       <article>
+        <div class="titre2">
+          <h1>Parcours</h1>
+         <h3 class="sous_titre">Retracez mon parcours ,de la découverte du développement web a ma reconversion.</h3>
+       </div>
       
   <section id="portfolio">
     <div class="project">
@@ -326,4 +329,5 @@
 <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>  
 <script src="./time.js"></script>
 <script src="./portfolio.js"></script>
+<script src="./banner.js"></script>
 </html>
