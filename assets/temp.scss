@@ -1,0 +1,617 @@
+/*///////////////////////////////////TEXTE///////////////////////////////////////////////////////////////////*/
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Merriweather');
+$font_family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$font_family2 :'Roboto', sans-serif;
+$font_size_titre : 50vh;
+$font_size_sous_titre : 5vh;
+$font_size_sous_sous_titre : 3vh;
+$font_size_nav: 5vh;
+$font_col3_medium:medium;
+$font_col3_large:medium;
+$font_col3_xxlarge:medium;
+/*///////////////////////////////////COMPORTEMENT DES IMAGES///////////////////////////////////////////////////////////////////*/
+$min_width_image : 250px;
+$white : white;
+/*///////////////////////////////////COMPORTEMENT DU SITE///////////////////////////////////////////////////////////////////*/
+$overflow : hidden;
+$scroll_general :smooth;
+/*///////////////////////////////////STRUCTURE PORTFOLIO///////////////////////////////////////////////////////////////////*/
+$column3_size : 30vw;
+$primary: #CECDCA;
+$secondary: black;
+$light: #CECDCA;
+$dark: #474545;
+$ease: all 0.3s ease-in-out;
+
+html
+{
+    cursor: url(./cursor.svg),default;
+	font-family: $font_family2;
+    scroll-behavior: $scroll_general;
+}
+body
+{
+	overflow: $overflow;
+	margin: 0;
+}
+
+///////////////////////////////////////CONTENU PAGE////////////////////////////////////////////////////////////////
+.content0 
+{
+	z-index: 1000;
+	display: flex;
+	justify-content: flex-end;
+	background-color: black;
+	height: 10vh;
+	width: 100vw;
+	position: fixed;
+	color: #fefefe;
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+	
+  }
+
+  .container
+  {
+	display: grid;
+	grid-template-columns: 1fr;
+	
+	// items
+	> * {
+	  
+	  font-size: 1.2em;
+	  line-height: 1.5;
+	  padding: 20px;
+	  
+	}
+	.titre 
+	{
+		font-size:xx-large;
+		padding-left: 10%;
+	}
+	header 
+	{
+		
+		
+		output
+		{
+		
+		font-size: large;
+		}
+		// nav styles
+		nav 
+		{
+		
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			
+	
+			li {
+			a {
+				color: white;
+				text-decoration: none;
+				font-size: xx-large;
+				
+			}
+			a:hover{
+				border-bottom: #fefefe solid 5px;
+			}
+			}
+		}
+		}
+
+	}
+	
+  }
+  /******************************************typewriter***********************************************************/
+/* Animation */
+.hello,.hello0,.hello1,.hello2,.hello3
+{
+
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 40px;
+  color:white;
+  
+}
+/* text animation  effet machine à ecrire*/
+@keyframes animated-text
+{
+    from{width: 0;}
+    to{ width: 100%;}
+}
+.hello
+{
+    animation:
+    animated-text 2s steps(20,end) 1s 1 normal both,
+    type 600ms steps(30, end) 8;
+}
+.hello0
+{
+    animation:
+    animated-text 2s steps(20,end) 3s 1 normal both,
+    type 600ms steps(30, end) 8;
+}
+.hello1
+{
+    animation:
+    animated-text 2s steps(20,end) 5s 1 normal both,
+    taper 600ms steps(20,end) 8 ;
+}
+.hello2
+{
+    animation:
+    animated-text 2s steps(20,end) 7s 1 normal both,
+    taper 600ms steps(20,end) 8;
+}
+.hello3
+{
+    animation:
+    animated-text 2s steps(20,end) 9s 1 normal both,
+    taper 600ms steps(20,end) 8;
+}
+.nom
+{
+ font-size: 200px;
+ color: white;
+ line-height: 1;
+}
+.fonction
+{
+ font-size: 50px;
+ color: white;
+}
+
+  // media query for grid layout
+  @media only screen and (min-width: 600px) {
+	// grid
+	.container {
+	  grid-template-columns: repeat(4, 1fr);
+  
+	  // specific item styles
+	  header, nav, footer {
+		grid-column: span 4;
+	}
+  
+	  #article0 
+	  {
+		
+		grid-column: span 3;
+		font-size: 30px;
+		height: 90vh;
+		color: black;
+		padding: 20% 10% 10% 10%;
+		background-color: #15227A;
+	}
+
+	aside
+	{
+		background-color: aquamarine;
+	}
+	aside > img
+	{
+		margin-top: 30%;
+		min-width: 800px;
+		
+	}
+	  #article1 
+	  {
+		grid-column: span 4;
+		height: 100vh;
+	
+	  }
+  
+	  #article2 
+	  {
+		grid-column: span 4;
+		height: 100vh;
+		width: 90VW;
+		
+		#parcours
+		{
+			padding: 10%;
+		}
+	}
+/**********************************************COLONNE*****************************************************/
+.columns 
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+  
+	.column {
+	  flex: 1;
+	  /*border: 1px solid gray;*/
+	  margin: 2px;
+	  padding: 10px;
+	
+	  &:first-child { 
+		margin-left: 0; 
+	  }
+	
+	  &:last-child { 
+		margin-right: 0; 
+	  }
+	}
+  }
+  
+  /****************************************colonne 3 effet****************/
+.about2 ,.about3
+{
+ border-left: red solid 5px;
+}
+.about3
+{
+
+}
+ .col3 
+{   
+	li
+	{
+		font-weight: bold;
+		font-size: 180px;
+    	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	 }
+	 .html h4 ,
+	.css h4, 
+	.illustrator h4,
+	.trello h4
+	{
+	font-size:xx-large;
+	}
+	.javascript h4 , 
+	.photoshop h4  , 
+	.indesign h4 , 
+	.cms h4
+	{
+	font-size: x-large;
+	}
+	.php h4 ,
+	.csharp h4 
+	{
+	font-size: medium;
+
+	}
+	.python h4
+	{
+	font-size: medium;
+	}
+
+	.html p ,
+	.css p, 
+	.illustrator p,
+	.trello p,
+	.javascript p , 
+	.photoshop p , 
+	.indesign p, 
+	.cms p,
+	.php p ,
+	.csharp p,
+	.python p
+	{
+	display:none;
+	}
+	.html:hover p ,
+	.css:hover p ,
+	.illustrator:hover p ,
+	.trello:hover p ,
+	.javascript:hover p ,
+	.photoshop:hover p ,
+	.indesign:hover p ,
+	.cms:hover p,
+	.php:hover p ,
+	.csharp:hover p, 
+	.python:hover p 
+	{
+		display: block;
+		color: red;
+		font-size: medium;
+	}
+
+	}
+	.html h4 ,
+	.css h4, 
+	.illustrator h4,
+	.trello h4
+	{
+	font-size: xx-large;
+	}
+	.javascript h4 , 
+	.photoshop h4  , 
+	.indesign h4 , 
+	.cms h4
+	{
+	font-size: x-large;
+	}
+	.php h4 ,
+	.csharp h4 
+	{
+	font-size: medium;
+
+	}
+	.python h4
+	{
+	font-size:medium;
+	}
+
+	.html p ,
+	.css p, 
+	.illustrator p,
+	.trello p,
+	.javascript p , 
+	.photoshop p , 
+	.indesign p, 
+	.cms p,
+	.php p ,
+	.csharp p,
+	.python p
+	{
+	display:none;
+	}
+	.html:hover p ,
+	.css:hover p ,
+	.illustrator:hover p ,
+	.trello:hover p ,
+	.javascript:hover p ,
+	.photoshop:hover p ,
+	.indesign:hover p ,
+	.cms:hover p,
+	.php:hover p ,
+	.csharp:hover p, 
+	.python:hover p 
+	{
+		display: block;
+		color: red;
+		font-size: 3vh;
+	}
+
+
+	  /*/////////////////////////////////////////////////////////////////////Portfolio//////////////////////////////////////////////////////////////////////////////////////////*/
+	  #article3
+	  {
+		grid-column: span 4;
+		height: 100vh;
+		width: 100vw;
+		background-color: gray;
+		
+		
+
+	
+	
+        #portfolio 
+		{
+		padding: 40vh;
+		width: 50vw;
+		height: 50vh;
+		display: grid;
+		grid-template-columns: repeat(4, minmax(200px, 1fr));
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 2px;
+		
+	 
+		}
+		.titre2 
+		{
+			grid-row: 1 / -1;
+			h1
+			{
+				font-size: 80px;
+			}
+			.sous_titre
+			{
+				font-size: 40px;
+			}
+
+		}
+      
+		.project {
+			position: relative;
+			background: $primary;
+			overflow: hidden;
+			img 
+			{
+			  position: absolute;
+			  opacity: 0.9;
+			  width: 250px;
+			  height: 250px;
+			  object-fit: cover;
+		  
+			  
+			}
+	
+		p {
+			position: absolute;
+			text-align: center;
+			width: 100%;
+			padding: 1em 0;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			color: white;
+		
+		}
+		.grid__title {
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			white-space: nowrap;
+			bottom: 0;
+			font-weight: 100;
+			font-size: 0.8em;
+			
+			text-transform: uppercase;
+			color: white;
+			letter-spacing: 2px;
+		}
+		}
+
+		// project hover overlay
+		.project:hover .grid__overlay {
+		transform: translateY(0%);
+		}
+
+		.grid__overlay {
+		background: rgba(darken($primary, 10%), .9);
+		height: 100%;
+		grid-column: 1 / -1;
+		grid-row: 1/ -1;
+		position: relative;
+		display: grid;
+		justify-items: center;
+		align-items: center;
+		transform: translateY(101%);
+		transition: $ease;
+		button {
+			background: none;
+			outline: none;
+			font-weight: 100;
+			letter-spacing: 2px;
+			border: 1px solid $white;
+			color: $white;
+			text-transform: uppercase;
+			padding: 10px;
+			&:hover {
+			transition: $ease;
+			background: $white;
+			color: $secondary;
+			transform: scale(1.05);
+			}
+		}
+		}
+
+		//project popup overlay
+
+		.overlay {
+		position: fixed;
+		background: rgba($dark, 0.7);
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		display: none;
+		z-index: 3;
+		}
+		.overlay.open {
+		display: grid;
+		align-items: center;
+		justify-items: center;
+		}
+
+		.overlay__inner {
+		background: $white;
+		width: 700px;
+		padding: 20px;
+		position: relative;
+		opacity: 1;
+		img
+		{
+			max-width: 600px;
+			max-height: 600px;
+		}
+		}
+		.hide
+		{
+			display: none;
+		}
+		.description
+		{
+			p {
+				color: black;
+			}
+		}
+		.close {
+		position: absolute;
+		top: 3px;
+		right: 10px;
+		background: none;
+		outline: 0;
+		color: $dark;
+		border: 0;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		&:hover {
+			color: $secondary;
+		}
+		}
+
+	
+	   }
+		
+			
+			
+		}
+  
+	
+	  }
+  
+	  #article4 {
+		grid-column: span 4;
+		height: 100vh;
+	  }
+	  
+  
+	  // nav styles
+	  nav ul li {
+		display: inline-block;
+		padding: 0 20px 0 0;
+	  }
+  
+	  // hide toggle
+	  .toggle {
+		display: none;
+	  }
+	
+  
+  
+  // media query for nav styles
+  @media only screen and (max-width: 599px) {
+	#nav {
+	  transition: transform .3s ease-in-out;
+	  top: 0;
+	  bottom: 0;
+	  min-height: 100vh;
+	  position: fixed;
+	  width: 300px;
+	  left: -340px;
+	}
+  
+	#nav:target {
+	  transform: translateX(340px);
+	}
+  
+	.close {
+	  text-align: right;
+	  display: block;
+	  text-decoration: none;
+	  font-size: 3em;
+	  position: relative;
+	  top: -30px;
+	}
+  }
+  .cards
+  {
+	margin-top: 10%;
+	margin-left: 30%;
+	margin-right: 30%;
+	padding: 5%;
+	background: #fefefe;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 2px 10px rgba(0,0,0,.1), 3px 5px 20px rgba(0,0,0,.2);
+
+
+	.card h3
+	{
+		font-size: $font_size_sous_sous_titre;
+		padding: 10%;
+	}
+	.card h4
+	{
+		font-size: $font_size_sous_titre;
+		padding: 5%;
+	}
+}

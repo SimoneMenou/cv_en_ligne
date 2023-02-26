@@ -7,9 +7,8 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Antonio&family=Barlow+Semi+Condensed:wght@100&family=Barlow:wght@100&family=Bebas+Neue&family=Fragment+Mono&family=Lobster&family=Orbitron&family=Oswald:wght@200&family=Playfair+Display&family=Roboto+Mono:wght@100&family=Roboto:wght@100;500&family=Silkscreen&family=Sofia+Sans:wght@100&family=Source+Code+Pro&display=swap');
     </style>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="temp.css">
-    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/temp.css">
     <title>I am just a baby junior</title>
 </head>
 <body>
@@ -44,7 +43,7 @@
       </article>
   </section>
   <aside>
-    <img src="./laptop3.gif" alt="" class="octo">
+    <img src="./assets/gif.gif" alt="" class="octo">
   </aside>
   <section id="article1" >
       <article>
@@ -64,14 +63,9 @@
   </section>
 
   <section id="article2" >
-      <article >
-       
-        <div class="titre2">
-           <h1>Parcours</h1>
-          <h3 class="sous_titre">Retracez mon parcours ,de la découverte du développement web a ma reconversion.</h3>
-        </div>
+      <article id="parcours">
       <!--Section Parcours  -->
-      <div class="content3 columns" id="parcours">
+      <div class="content3 columns" >
        
         <!--colonne 1 parcours⛔  -->
         <div class="about2 column">
@@ -202,82 +196,88 @@
   </section>
 
 
+  
+       
   <section id="article3">
-      <article>
-        <div class="titre2">
-          <h1>Parcours</h1>
-         <h3 class="sous_titre">Retracez mon parcours ,de la découverte du développement web a ma reconversion.</h3>
-       </div>
-      
-  <section id="portfolio">
+  
+  
+    <article id="portfolio">
+   
+
     <div class="project">
-      <img class="project__image" src="./bobby-king-hxa5gEAo3YE-unsplash.jpg" />
-      <p>PURE CSS</p>
-      <h3 class="grid__title">UI DESIGN</h3>
+      <img class="project__image" src="./assets/podcast.jpg" />
+      <p>-PODCAST WEBB APP-</p>
+      <p class="description hide">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Excepturi consequatur est omnis dignissimos, 
+        architecto eos nemo nisi ullam totam at quisquam 
+        fugiat iusto libero atque sint nesciunt minus ex error?
+      </p>
+      <h3 class="grid__title">FULL-STACK</h3>
       <div class="grid__overlay">
-        <button class="viewbutton">view more</button>
+        <button class="viewbutton">DECOUVRIR</button>
       </div>
     </div>
     
     <div class="project">
-      <img class="project__image" src="./bady-abbas-hxi_yRxODNc-unsplash.jpg" />
-      <p>wordpress</p>
+      <img class="project__image" src="./assets/jeux_de_mots.avif" />
+      <p>-JEUX DE MOTS-</p>
+      <h3 class="grid__title">FRONT-END</h3>
+      <div class="grid__overlay">
+        <button class="viewbutton">DECOUVRIR</button>
+      </div>
+    </div>
+    
+    <div class="project">
+      <img class="project__image" src="./assets/piano.avif" />
+      <p>-BOOKING MUSIQUE WEBB APP-</p>
+      <h3 class="grid__title">FULL-STACK</h3>
+      <div class="grid__overlay">
+        <button class="viewbutton">DECOUVRIR</button>
+      </div>
+    </div>
+    
+    <div class="project">
+      <img class="project__image" src="./assets/bouton.avif" />
+      <p>GALLERIE DE BOUTONS</p>
+      <h3 class="grid__title">PURE CSS</h3>
+      <div class="grid__overlay">
+        <button class="viewbutton">DECOUVRIR</button>
+      </div>
+    </div>
+    <div class="project">
+      <img class="project__image" src="./assets/vitrine.avif" />
+      <p>SITE VITRINE</p>
       <h3 class="grid__title">CMS</h3>
       <div class="grid__overlay">
-        <button class="viewbutton">view more</button>
+        <button class="viewbutton">DECOUVRIR</button>
       </div>
     </div>
     
     <div class="project">
-      <img class="project__image" src="./adam-birkett-lkNa1eg2d18-unsplash.jpg" />
-      <p>web apps</p>
-      <h3 class="grid__title">WEB-APP ASP </h3>
+      <img class="project__image" src="./assets/challenge.avif" />
+      <p>CHALLENGE APP</p>
+      <h3 class="grid__title">FULL-STACK</h3>
       <div class="grid__overlay">
-        <button class="viewbutton">view more</button>
+        <button class="viewbutton">DECOUVRIR</button>
+      </div>
+    </div>
+
+    <div class="project">
+      <img class="project__image" src="https://images.unsplash.com/photo-1526289034009-0240ddb68ce3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fGRlc2lnbiUyMGJsYWNrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
+      <p>GRAPHIC PORTFOLIO</p>
+      <h3 class="grid__title">GRAPHISME</h3>
+      <div class="grid__overlay">
+        <button class="viewbutton">DECOUVRIR</button>
       </div>
     </div>
     
     <div class="project">
-      <img class="project__image" src="./rob-walsh-82OLcN3uyOU-unsplash.jpg" />
-      <p>daily ui</p>
-      <h3 class="grid__title">JAVASCRIPT PROJETS</h3>
+      <img class="project__image" src="./assets/librairie.avif" />
+      <p>LIBRAIRIE</p>
+      <h3 class="grid__title">FRONT-END</h3>
       <div class="grid__overlay">
-        <button class="viewbutton">view more</button>
-      </div>
-    </div>
-    <div class="project">
-      <img class="project__image" src="./blaz-photo-cZWZjymwI9o-unsplash.jpg" />
-      <p>websites</p>
-      <h3 class="grid__title">WEB-APP SYMFONY</h3>
-      <div class="grid__overlay">
-        <button class="viewbutton">view more</button>
-      </div>
-    </div>
-    
-    <div class="project">
-      <img class="project__image" src="./martino-pietropoli-VSo5d9wlT7s-unsplash.jpg" />
-      <p>pure css</p>
-      <h3 class="grid__title">PURE CSS/SASS</h3>
-      <div class="grid__overlay">
-        <button class="viewbutton">view more</button>
-      </div>
-    </div>
-    
-    <div class="project">
-      <img class="project__image" src="./alexander-shatov-DHl49oyrn7Y-unsplash.jpg" />
-      <p>web apps</p>
-      <h3 class="grid__title">PYTHON</h3>
-      <div class="grid__overlay">
-        <button class="viewbutton">view more</button>
-      </div>
-    </div>
-    
-    <div class="project">
-      <img class="project__image" src="./andrew-kliatskyi-mkoxQ99o-_Y-unsplash.jpg" />
-      <p>daily ui</p>
-      <h3 class="grid__title">PROCESSING</h3>
-      <div class="grid__overlay">
-        <button class="viewbutton">view more</button>
+        <button class="viewbutton">DECOUVRIR</button>
       </div>
     </div>
     <div class="overlay">
@@ -286,9 +286,13 @@
         <img>
       </div>
     </div>
-  </section> 
-      </article>
+  </article>
   </section>
+              
+           
+        
+    
+
 
 
   <section id="article4">
@@ -317,10 +321,6 @@
      
       </article>
   </section>
-
-
- 
-
   <footer>
       <h3>Footer</h3>
   </footer>
@@ -328,6 +328,6 @@
 </div>
 <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>  
 <script src="./time.js"></script>
+<script src="./canvas.js"></script>
 <script src="./portfolio.js"></script>
-<script src="./banner.js"></script>
 </html>
