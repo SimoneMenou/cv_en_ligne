@@ -34,6 +34,8 @@ body
 {
 	overflow: $overflow;
 	margin: 0;
+	background-color: beige;
+	
 }
 
 ///////////////////////////////////////CONTENU PAGE////////////////////////////////////////////////////////////////
@@ -42,11 +44,10 @@ body
 	z-index: 1000;
 	display: flex;
 	justify-content: flex-end;
-	background-color: black;
 	height: 10vh;
 	width: 100vw;
 	position: fixed;
-	color: #fefefe;
+	color: black;
 	display: grid;
     grid-template-columns: repeat(3, 1fr);
 	
@@ -91,13 +92,13 @@ body
 	
 			li {
 			a {
-				color: white;
+				color: black;
 				text-decoration: none;
 				font-size: xx-large;
 				
 			}
 			a:hover{
-				border-bottom: #fefefe solid 5px;
+				border-bottom: black solid 2px;
 			}
 			}
 		}
@@ -108,14 +109,14 @@ body
   }
   /******************************************typewriter***********************************************************/
 /* Animation */
-.hello,.hello0,.hello1,.hello2,.hello3
+.hello,.hello0,.hello1,.hello2,.hello3,.hellobis
 {
 
   white-space: nowrap;
   overflow: hidden;    
   font-family: 'Source Code Pro', monospace;  
-  font-size: 40px;
-  color:white;
+  font-size: 30px;
+  color:black;
   
 }
 /* text animation  effet machine à ecrire*/
@@ -154,23 +155,33 @@ body
     animated-text 2s steps(20,end) 9s 1 normal both,
     taper 600ms steps(20,end) 8;
 }
+.hellobis
+{
+    animation:
+    animated-text 2s steps(20,end) 9s 1 normal both,
+    taper 600ms steps(20,end) 8;
+	margin-left: 20%;
+	
+}
 .nom
 {
- font-size: 200px;
- color: white;
+padding-top: 5%;
+ font-size: 190px;
+ color: black;
  line-height: 1;
 }
 .fonction
 {
- font-size: 50px;
- color: white;
+ font-size: 60px;
+ color: black;
 }
 
   // media query for grid layout
   @media only screen and (min-width: 600px) {
 	// grid
-	.container {
-	  grid-template-columns: repeat(4, 1fr);
+	.container 
+	{
+	  grid-template-columns: repeat(5, 1fr);
   
 	  // specific item styles
 	  header, nav, footer {
@@ -180,24 +191,26 @@ body
 	  #article0 
 	  {
 		
-		grid-column: span 3;
+		grid-column: span 2;
+		padding-top: 15%;
 		font-size: 30px;
-		height: 90vh;
+		height: 100vh;
 		color: black;
-		padding: 20% 10% 10% 10%;
-		background-color: #15227A;
-	}
-
-	aside
-	{
-		background-color: aquamarine;
-	}
-	aside > img
-	{
-		margin-top: 30%;
-		min-width: 800px;
 		
 	}
+ aside
+ {
+	grid-column: span 3;
+	
+ }
+ aside>img
+ {
+	padding-top: 20%;
+	padding-left: 10%;
+	min-width: 700px;
+ }
+
+
 	  #article1 
 	  {
 		grid-column: span 4;
@@ -222,9 +235,10 @@ body
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	margin: 5px 0;
+	
   
-	.column {
+	.column
+	 {
 	  flex: 1;
 	  /*border: 1px solid gray;*/
 	  margin: 2px;
@@ -245,104 +259,42 @@ body
 {
  border-left: red solid 5px;
 }
-.about3
-{
 
-}
  .col3 
 {   
 	li
 	{
-		font-weight: bold;
-		font-size: 180px;
-    	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	
+    	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	 }
-	 .html h4 ,
-	.css h4, 
-	.illustrator h4,
-	.trello h4
-	{
-	font-size:xx-large;
-	}
-	.javascript h4 , 
-	.photoshop h4  , 
-	.indesign h4 , 
-	.cms h4
-	{
-	font-size: x-large;
-	}
-	.php h4 ,
-	.csharp h4 
-	{
-	font-size: medium;
-
-	}
-	.python h4
-	{
-	font-size: medium;
-	}
-
-	.html p ,
-	.css p, 
-	.illustrator p,
-	.trello p,
-	.javascript p , 
-	.photoshop p , 
-	.indesign p, 
-	.cms p,
-	.php p ,
-	.csharp p,
-	.python p
-	{
-	display:none;
-	}
-	.html:hover p ,
-	.css:hover p ,
-	.illustrator:hover p ,
-	.trello:hover p ,
-	.javascript:hover p ,
-	.photoshop:hover p ,
-	.indesign:hover p ,
-	.cms:hover p,
-	.php:hover p ,
-	.csharp:hover p, 
-	.python:hover p 
-	{
-		display: block;
-		color: red;
-		font-size: medium;
-	}
-
-	}
+}
 	.html h4 ,
 	.css h4, 
-	.illustrator h4,
-	.trello h4
+	.illustrator h4
 	{
-	font-size: xx-large;
+	font-size: 2em;
 	}
 	.javascript h4 , 
 	.photoshop h4  , 
 	.indesign h4 , 
 	.cms h4
 	{
-	font-size: x-large;
+	font-size: 3em;
 	}
 	.php h4 ,
 	.csharp h4 
 	{
-	font-size: medium;
+	font-size: 2em;
 
 	}
 	.python h4
 	{
-	font-size:medium;
+	font-size:2em;
 	}
 
 	.html p ,
 	.css p, 
 	.illustrator p,
-	.trello p,
 	.javascript p , 
 	.photoshop p , 
 	.indesign p, 
@@ -356,7 +308,6 @@ body
 	.html:hover p ,
 	.css:hover p ,
 	.illustrator:hover p ,
-	.trello:hover p ,
 	.javascript:hover p ,
 	.photoshop:hover p ,
 	.indesign:hover p ,
@@ -367,7 +318,7 @@ body
 	{
 		display: block;
 		color: red;
-		font-size: 3vh;
+		font-size: 0.9em;
 	}
 
 
@@ -377,7 +328,7 @@ body
 		grid-column: span 4;
 		height: 100vh;
 		width: 100vw;
-		background-color: gray;
+		
 		
 		
 
@@ -385,9 +336,9 @@ body
 	
         #portfolio 
 		{
-		padding: 40vh;
-		width: 50vw;
-		height: 50vh;
+		padding: 15vh;
+		width: 80vw;
+		height: 80vh;
 		display: grid;
 		grid-template-columns: repeat(4, minmax(200px, 1fr));
 		grid-template-rows: 1fr 1fr;
@@ -417,8 +368,8 @@ body
 			{
 			  position: absolute;
 			  opacity: 0.9;
-			  width: 250px;
-			  height: 250px;
+			  width: 450px;
+			  height: 450px;
 			  object-fit: cover;
 		  
 			  
@@ -583,7 +534,8 @@ body
 	  transform: translateX(340px);
 	}
   
-	.close {
+	.close
+	 {
 	  text-align: right;
 	  display: block;
 	  text-decoration: none;
@@ -592,26 +544,74 @@ body
 	  top: -30px;
 	}
   }
+  .cards1
+  {
+    margin-top: 20%;
+	padding: 5%;	
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 2px 10px rgba(0,0,0,.1), 3px 5px 20px rgba(0,0,0,.2);
+	
+}
+
+
   .cards
   {
 	margin-top: 10%;
-	margin-left: 30%;
+	margin-left: 20%;
 	margin-right: 30%;
-	padding: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 2%;
+	padding-bottom: 2%;
 	background: #fefefe;
 	border-radius: 5px;
 	overflow: hidden;
 	box-shadow: 0 2px 10px rgba(0,0,0,.1), 3px 5px 20px rgba(0,0,0,.2);
+	
+.card-img 
+{
+    width: 250px;
+	height: 400px;
+    background-image: url(https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a20bc6324f6ef2969d9a7cae56b8d4d1&auto=format&fit=crop&w=1350&q=80);
+    background-position: 0 center;
+    background-size: cover;
+  }
 
 
-	.card h3
+	h3
 	{
-		font-size: $font_size_sous_sous_titre;
-		padding: 10%;
+		font-size: 2em;
 	}
-	.card h4
+	h4
 	{
-		font-size: $font_size_sous_titre;
-		padding: 5%;
+		font-size: 1.5em;
+		padding-bottom: 5%;
 	}
+	h5
+	{
+		font-size: 1em;
+		padding-top: 5%;
+	}
+
+}
+article {
+	.forme
+	{
+		clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+		background-color: aqua;
+	}
+}
+
+.profil_link
+{
+	padding-top: 10%;
+	img{
+		min-width: 40px;
+	}
+ a
+ {
+	text-decoration: none;
+	color: black;
+ }
 }
