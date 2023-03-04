@@ -52,6 +52,25 @@ body
     grid-template-columns: repeat(3, 1fr);
 	
   }
+  #article0  
+{
+	.hello,.hello0,.hello1,.hello2,.hello3 {
+	font-size: 30px;}
+	
+}
+aside
+{
+   img 
+   {
+	padding-top: 20%;
+	padding-left: 10%;
+	width: 700px;
+	}
+   .hellobis 
+   {
+	font-size: 30px;
+   }
+}
 
   .container
   {
@@ -61,14 +80,13 @@ body
 	// items
 	> * {
 	  
-	  font-size: 1.2em;
 	  line-height: 1.5;
 	  padding: 20px;
 	  
 	}
 	.titre 
 	{
-		font-size:xx-large;
+		
 		padding-left: 10%;
 	}
 	header 
@@ -107,6 +125,105 @@ body
 	}
 	
   }
+
+  .cards1
+  {
+    margin-top: 20%;
+	padding: 5%;	
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 2px 10px rgba(0,0,0,.1), 3px 5px 20px rgba(0,0,0,.2);
+	
+}
+.cards
+  {
+	margin-top: 10%;
+	margin-left: 20%;
+	margin-right: 30%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	background: #fefefe;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 2px 10px rgba(0,0,0,.1), 3px 5px 20px rgba(0,0,0,.2);
+	
+.card-img 
+{
+    width: 250px;
+	height: 400px;
+    background-image: url(https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a20bc6324f6ef2969d9a7cae56b8d4d1&auto=format&fit=crop&w=1350&q=80);
+    background-position: 0 center;
+    background-size: cover;
+  }
+
+
+	h3
+	{
+		font-size: 2em;
+	}
+	h4
+	{
+		font-size: 1.5em;
+		padding-bottom: 5%;
+	}
+	h5
+	{
+		font-size: 1em;
+		padding-top: 5%;
+	}
+	p {
+		font-size: 20px;
+	}
+
+}
+#article4
+{
+	.content5 {
+		padding-top: 10%;
+	}
+
+}
+#article2 
+{
+  grid-column: span 4;
+  height: 100vh;
+  width: 90VW;
+  
+  #parcours
+  {
+	  padding: 10%;
+	  font-size: 20px;
+  }
+  .about2 ,.about3
+{
+ border-left: red solid 5px;
+}
+}
+#portfolio 
+{
+padding: 20vh;
+width: 80vw;
+height: 80vh;
+display: grid;
+grid-template-columns: repeat(4, minmax(200px, 1fr));
+grid-template-rows: 1fr 1fr;
+grid-gap: 2px;
+
+.project 
+{
+	img 
+			{
+			  position: absolute;
+			  opacity: 0.9;
+			  width: 450px;
+			  height: 450px;
+			  object-fit: cover;
+		    }
+}
+}
+
   /******************************************typewriter***********************************************************/
 /* Animation */
 .hello,.hello0,.hello1,.hello2,.hello3,.hellobis
@@ -115,7 +232,6 @@ body
   white-space: nowrap;
   overflow: hidden;    
   font-family: 'Source Code Pro', monospace;  
-  font-size: 30px;
   color:black;
   
 }
@@ -176,8 +292,9 @@ padding-top: 5%;
  color: black;
 }
 
+
   // media query for grid layout
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width:576px ) {
 	// grid
 	.container 
 	{
@@ -193,9 +310,10 @@ padding-top: 5%;
 		
 		grid-column: span 2;
 		padding-top: 15%;
-		font-size: 30px;
 		height: 100vh;
 		color: black;
+
+		
 		
 	}
  aside
@@ -203,32 +321,14 @@ padding-top: 5%;
 	grid-column: span 3;
 	
  }
- aside>img
- {
-	padding-top: 20%;
-	padding-left: 10%;
-	min-width: 700px;
- }
-
-
-	  #article1 
+#article1 
 	  {
 		grid-column: span 4;
 		height: 100vh;
 	
 	  }
   
-	  #article2 
-	  {
-		grid-column: span 4;
-		height: 100vh;
-		width: 90VW;
-		
-		#parcours
-		{
-			padding: 10%;
-		}
-	}
+	 
 /**********************************************COLONNE*****************************************************/
 .columns 
 {
@@ -255,10 +355,7 @@ padding-top: 5%;
   }
   
   /****************************************colonne 3 effet****************/
-.about2 ,.about3
-{
- border-left: red solid 5px;
-}
+
 
  .col3 
 {   
@@ -329,23 +426,7 @@ padding-top: 5%;
 		height: 100vh;
 		width: 100vw;
 		
-		
-		
 
-	
-	
-        #portfolio 
-		{
-		padding: 15vh;
-		width: 80vw;
-		height: 80vh;
-		display: grid;
-		grid-template-columns: repeat(4, minmax(200px, 1fr));
-		grid-template-rows: 1fr 1fr;
-		grid-gap: 2px;
-		
-	 
-		}
 		.titre2 
 		{
 			grid-row: 1 / -1;
@@ -364,16 +445,7 @@ padding-top: 5%;
 			position: relative;
 			background: $primary;
 			overflow: hidden;
-			img 
-			{
-			  position: absolute;
-			  opacity: 0.9;
-			  width: 450px;
-			  height: 450px;
-			  object-fit: cover;
-		  
-			  
-			}
+			
 	
 		p {
 			position: absolute;
@@ -544,57 +616,7 @@ padding-top: 5%;
 	  top: -30px;
 	}
   }
-  .cards1
-  {
-    margin-top: 20%;
-	padding: 5%;	
-	border-radius: 5px;
-	overflow: hidden;
-	box-shadow: 0 2px 10px rgba(0,0,0,.1), 3px 5px 20px rgba(0,0,0,.2);
-	
-}
 
-
-  .cards
-  {
-	margin-top: 10%;
-	margin-left: 20%;
-	margin-right: 30%;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-top: 2%;
-	padding-bottom: 2%;
-	background: #fefefe;
-	border-radius: 5px;
-	overflow: hidden;
-	box-shadow: 0 2px 10px rgba(0,0,0,.1), 3px 5px 20px rgba(0,0,0,.2);
-	
-.card-img 
-{
-    width: 250px;
-	height: 400px;
-    background-image: url(https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a20bc6324f6ef2969d9a7cae56b8d4d1&auto=format&fit=crop&w=1350&q=80);
-    background-position: 0 center;
-    background-size: cover;
-  }
-
-
-	h3
-	{
-		font-size: 2em;
-	}
-	h4
-	{
-		font-size: 1.5em;
-		padding-bottom: 5%;
-	}
-	h5
-	{
-		font-size: 1em;
-		padding-top: 5%;
-	}
-
-}
 article {
 	.forme
 	{
