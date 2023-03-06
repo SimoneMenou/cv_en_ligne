@@ -1,0 +1,265 @@
+// Propriétés pour l'affichage sur ordinateurs de bureau et tablettes
+$screen-small: 17in;
+$screen-mobile: 12in;
+
+
+
+@media  (max-width: $screen-small) {
+    #article0  
+    {
+        article
+        {
+            padding-top: 10%;
+        }
+        
+        .hello,.hello0,.hello1,.hello2,.hello3 {
+        font-size: 15px;}
+        
+    }
+    aside
+    {
+       img 
+       {
+        padding-top: 40%;
+        padding-left: 5%;
+        width: 300px;
+        }
+       .hellobis 
+       {
+        font-size: 10px;
+       }
+    }
+    #nav 
+    {
+    li {
+        a {
+            font-size: 20px;
+          }
+        }
+    }
+    .nom
+    {
+    font-size: 85px;
+    }
+    .fonction
+    {
+    font-size: 25px;
+    }
+    .titre 
+    {
+        font-size:xx-large;
+    }
+
+    #article2 
+    {
+       
+      
+        #parcours
+      {
+        padding-top: 20%;
+        font-size: 0.5em;
+      }
+      .about2 ,.about3
+      {
+       border-left: red solid 2px;
+      }
+   }
+
+
+   .cards
+    {
+      margin-top: 10%;
+      margin-left: 10%;
+      margin-right: 10%;
+      
+      
+    p {
+        font-size: 10px;
+    }
+  
+  
+      h3
+      {
+          font-size: 1.5em;
+      }
+      h4
+      {
+          font-size: 1em;
+          padding-bottom: 5%;
+      }
+      h5
+      {
+          font-size: 1em;
+          padding-top: 5%;
+      }
+
+      .profil_link
+        {
+            padding-top: 5%;
+            img
+            {
+                min-width: 30px;
+            }
+        a
+        {
+            font-size: 10px;
+        }
+        }
+}
+#portfolio 
+{
+    padding: 25vh;
+    width: 80vw;
+    height: 60vh;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+ 
+    
+.overlay__inner {
+
+	width: 500px;
+	img
+	{
+		max-width: 400px;
+		max-height: 400px;
+	}
+	}
+
+
+}
+    /******************************************typewriter***********************************************************/
+  /* Animation */
+  .hello,.hello0,.hello1,.hello2,.hello3,.hellobis
+  {
+  
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family: 'Source Code Pro', monospace;  
+    color:black;
+    
+  }
+    
+  }
+    
+  
+@media  (max-width:375px) {
+
+.container
+{
+   display: flex;
+   flex-direction: column;
+   overflow-y: auto; /* Ajoute un scroll vertical si le contenu dépasse la hauteur de l'écran */
+   height: 100vh; /* Définit la hauteur de l'élément parent sur 100% de la hauteur de la vue */
+   .toggle
+   {
+    display: block;
+   }
+   .time1
+   {
+    display: none;
+   }
+ 
+
+}
+#article0  
+{
+    padding-top: 5%;
+    .hello,.hello0,.hello1,.hello2,.hello3 
+    {
+    font-size: 10px;
+    }
+        
+}
+    aside
+    {
+       
+       img 
+       {
+        padding-top: 0;
+        width: 300px;
+        }
+       .hellobis 
+       {
+        font-size: 10px;
+       }
+    }
+    #nav 
+    {
+    li {
+        a {
+            font-size: 10px;
+          }
+        }
+    }
+    .nom
+    {
+    font-size: 50px;
+    }
+    .fonction
+    {
+    font-size: 20px;
+    }
+    .titre 
+    {
+        font-size:10px;
+    }
+   #article2 
+    {
+    #parcours
+      {
+        font-size: 0.5em;
+      }
+      .about2 ,.about3
+      {
+       border-left: red solid 1px;
+      }
+   }
+   .cards
+   {
+    
+    
+     
+ .card-img 
+ {
+     width: 250px;
+     height: 400px;
+     background-image: url(https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a20bc6324f6ef2969d9a7cae56b8d4d1&auto=format&fit=crop&w=1350&q=80);
+     background-position: 0 center;
+     background-size: cover;
+   }
+ 
+ 
+     h3
+     {
+         font-size: 1em;
+     }
+     h4
+     {
+         font-size: 1em;
+         padding-bottom: 5%;
+     }
+     h5
+     {
+         font-size: 1em;
+         padding-top: 5%;
+     }
+     p {
+         font-size: 10px;
+     }
+ 
+ }
+
+    /******************************************typewriter***********************************************************/
+  /* Animation */
+  .hello,.hello0,.hello1,.hello2,.hello3,.hellobis
+  {
+  
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family: 'Source Code Pro', monospace;  
+    color:black;
+    
+  }
+    
+  }
+    
+  
