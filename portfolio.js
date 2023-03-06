@@ -5,7 +5,7 @@
 const buttons = document.querySelectorAll('.project');
 const overlay = document.querySelector('.overlay');
 const overlayImage = document.querySelector('.overlay__inner img');
-const description = document.querySelector('description p');
+
 
 
 
@@ -13,6 +13,7 @@ function open(e) {
   overlay.classList.add('open');
   const src= e.currentTarget.querySelector('img').src;
   overlayImage.src = src;
+
   
 }
 
