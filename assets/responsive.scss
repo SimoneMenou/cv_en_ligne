@@ -13,7 +13,7 @@ $screen-mobile: 12in;
         }
         
         .hello,.hello0,.hello1,.hello2,.hello3 {
-        font-size: 15px;}
+        font-size: 20px;}
         
     }
     aside
@@ -22,33 +22,31 @@ $screen-mobile: 12in;
        {
         padding-top: 40%;
         padding-left: 5%;
-        width: 300px;
+        width: 500px;
         }
        .hellobis 
        {
-        font-size: 10px;
+        font-size: 20px;
        }
     }
     #nav 
     {
     li {
         a {
-            font-size: 20px;
+            font-size: 40px;
           }
         }
     }
     .nom
     {
-    font-size: 85px;
+    margin-top: 20%;
+    font-size: 150px;
     }
     .fonction
     {
-    font-size: 25px;
+    font-size: 40px;
     }
-    .titre 
-    {
-        font-size:xx-large;
-    }
+   
 
     #article2 
     {
@@ -56,8 +54,8 @@ $screen-mobile: 12in;
       
         #parcours
       {
-        padding-top: 20%;
-        font-size: 0.5em;
+        padding-top: 15%;
+        font-size: 1em;
       }
       .about2 ,.about3
       {
@@ -69,12 +67,12 @@ $screen-mobile: 12in;
    .cards
     {
       margin-top: 10%;
-      margin-left: 10%;
-      margin-right: 10%;
+      margin-left: 20%;
+      margin-right: 20%;
       
       
     p {
-        font-size: 10px;
+        font-size: 20px;
     }
   
   
@@ -108,7 +106,7 @@ $screen-mobile: 12in;
 }
 #portfolio 
 {
-    padding: 25vh;
+   
     width: 80vw;
     height: 60vh;
     grid-template-columns: repeat(4, minmax(100px, 1fr));
