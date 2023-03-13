@@ -64,12 +64,53 @@
     height: 60vh;
     grid-template-columns: repeat(4, minmax(100px, 1fr));
   }
-  #portfolio .overlay__inner {
-    width: 500px;
+  #portfolio .parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
   }
-  #portfolio .overlay__inner img {
-    max-width: 400px;
-    max-height: 400px;
+  #portfolio .div1 {
+    grid-area: 1/1/2/2;
+  }
+  #portfolio .div2 {
+    grid-area: 1/2/2/3;
+  }
+  #portfolio .div3 {
+    grid-area: 1/3/2/4;
+  }
+  #portfolio .div4 {
+    grid-area: 1/4/2/5;
+  }
+  #portfolio .div5 {
+    grid-area: 2/4/3/5;
+  }
+  #portfolio .div6 {
+    grid-area: 3/4/4/5;
+  }
+  #portfolio .div7 {
+    grid-area: 3/3/4/4;
+  }
+  #portfolio .div8 {
+    grid-area: 2/3/3/4;
+  }
+  #portfolio .div9 {
+    grid-area: 2/2/3/3;
+  }
+  #portfolio .div10 {
+    grid-area: 3/2/4/3;
+  }
+  #portfolio .div11 {
+    grid-area: 3/1/4/2;
+  }
+  #portfolio .div12 {
+    grid-area: 2/1/3/2;
+  }
+  #portfolio .div1, #portfolio .div2, #portfolio .div3, #portfolio .div4, #portfolio .div5, #portfolio .div6, #portfolio .div7, #portfolio .div8, #portfolio .div9, #portfolio .div10, #portfolio .div11, #portfolio .div12 {
+    background-color: blueviolet;
+    width: 20vw;
+    height: 20vh;
   }
   /******************************************typewriter***********************************************************/
   /* Animation */
@@ -92,6 +133,11 @@
   }
   .container .time1 {
     display: none;
+  }
+  #portfolio {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
   }
   #article0 {
     padding-top: 5%;
@@ -119,10 +165,7 @@
     font-size: 10px;
   }
   #article2 #parcours {
-    font-size: 0.5em;
-  }
-  #article2 .about2, #article2 .about3 {
-    border-left: red solid 1px;
+    display: none;
   }
   .cards .card-img {
     width: 250px;
@@ -152,5 +195,10 @@
     overflow: hidden;
     font-family: "Source Code Pro", monospace;
     color: black;
+  }
+  .parent div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
   }
 }/*# sourceMappingURL=responsive.css.map */
