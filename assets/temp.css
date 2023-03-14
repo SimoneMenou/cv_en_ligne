@@ -190,6 +190,8 @@ aside .hellobis {
   grid-area: 1/1/2/2;
 }
 #portfolio .div2 {
+  background-image: url(./button.jpg);
+  background-size: 100%;
   grid-area: 1/2/2/3;
 }
 #portfolio .div3 {
