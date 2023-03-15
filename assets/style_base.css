@@ -1,16 +1,17 @@
 @charset "UTF-8";
 /*///////////////////////////////////TEXTE///////////////////////////////////////////////////////////////////*/
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow&family=Damion&family=Fjalla+One&family=Life+Savers&family=Montserrat:wght@200;400&family=Nanum+Gothic+Coding&family=Open+Sans:wght@300&family=Playfair+Display&family=Righteous&family=Roboto+Condensed:wght@300&family=Roboto:wght@500&family=Satisfy&family=Silkscreen&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Inconsolata|Merriweather");
 /*///////////////////////////////////COMPORTEMENT DES IMAGES///////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////COMPORTEMENT DU SITE///////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////STRUCTURE PORTFOLIO///////////////////////////////////////////////////////////////////*/
 html {
   cursor: url(./cursor.svg), default;
-  font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   overflow: hidden;
   margin: 0;
   background-color: beige;
@@ -34,6 +35,7 @@ body {
   color: black;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  font-family: "Roboto", sans-serif;
 }
 
 #article0 .hello, #article0 .hello0, #article0 .hello1, #article0 .hello2, #article0 .hello3 {
@@ -83,25 +85,6 @@ aside .hellobis {
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1), 3px 5px 20px rgba(0, 0, 0, 0.2);
-}
-
-.cards2 {
-  margin-top: 10%;
-  margin-left: 20%;
-  margin-right: 30%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 2%;
-  padding-bottom: 5%;
-  margin-bottom: 10%;
-  background: #fefefe;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1), 3px 5px 20px rgba(0, 0, 0, 0.2);
-}
-
-.cadre3 {
-  margin-top: 20%;
 }
 
 .cards {
@@ -323,26 +306,27 @@ aside .hellobis {
   .container .columns .column:last-child {
     margin-right: 0;
   }
-  .container .col3 li {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
   .container .html h4,
   .container .css h4,
   .container .illustrator h4 {
     font-size: 2em;
+    font-family: "Anton", sans-serif;
   }
   .container .javascript h4,
   .container .photoshop h4,
   .container .indesign h4,
   .container .cms h4 {
     font-size: 3em;
+    font-family: "Anton", sans-serif;
   }
   .container .php h4,
   .container .csharp h4 {
     font-size: 2em;
+    font-family: "Anton", sans-serif;
   }
   .container .python h4 {
     font-size: 2em;
+    font-family: "Anton", sans-serif;
   }
   .container .html p,
   .container .css p,
@@ -369,6 +353,7 @@ aside .hellobis {
     display: block;
     color: red;
     font-size: 0.9em;
+    font-family: "Anton", sans-serif;
   }
   .container .hide {
     display: none;
@@ -490,7 +475,23 @@ aside .hellobis {
 }
 #article4 {
   grid-column: span 4;
-  height: 100vh;
+  height: 80vh;
+}
+#article4 footer {
+  margin-top: 5%;
+}
+#article4 .cards2 {
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 30%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  background: #fefefe;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1), 3px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 nav ul li {
@@ -552,8 +553,7 @@ footer h3 {
 }
 
 .content-footer {
-  max-width: 1000px;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -624,8 +624,8 @@ footer h3 {
   color: antiquewhite;
 }
 
-.services-list a:hover {
-  color: rgb(3, 3, 3);
+.services-list a:hover, schedule-list:hover {
+  border-bottom: solid white 1px;
 }
 
 /* Medias */
@@ -657,20 +657,4 @@ footer h3 {
     flex-basis: auto;
     margin: 20px 20px;
   }
-}
-@media screen and (max-width: 600px) {
-  .content-footer {
-    justify-content: center;
-    padding-top: 30px;
-  }
-  .bloc {
-    flex-basis: 70%;
-    /* margin: 10px; */
-  }
-  .footer-contact h3,
-  .footer-services h3,
-  .footer-schedule h3,
-  .footer-medias h3 {
-    padding-bottom: 5px;
-  }
-}/*# sourceMappingURL=temp.css.map */
+}/*# sourceMappingURL=style_base.css.map */

@@ -1,8 +1,9 @@
 /*///////////////////////////////////TEXTE///////////////////////////////////////////////////////////////////*/
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow&family=Damion&family=Fjalla+One&family=Life+Savers&family=Montserrat:wght@200;400&family=Nanum+Gothic+Coding&family=Open+Sans:wght@300&family=Playfair+Display&family=Righteous&family=Roboto+Condensed:wght@300&family=Roboto:wght@500&family=Satisfy&family=Silkscreen&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Merriweather');
 $font_family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 $font_family2 :'Roboto', sans-serif;
+
 $font_size_titre : 50vh;
 $font_size_sous_titre : 5vh;
 $font_size_sous_sous_titre : 3vh;
@@ -24,14 +25,17 @@ $light: #CECDCA;
 $dark: #474545;
 $ease: all 0.3s ease-in-out;
 
+
 html
 {
     cursor: url(./cursor.svg),default;
-	font-family: $font_family2;
+    
     scroll-behavior: $scroll_general;
+	
 }
 body
 {
+	font-family: $font_family2;
 	overflow: $overflow;
 	margin: 0;
 	background-color: beige;
@@ -56,6 +60,7 @@ body
 	color: black;
 	display: grid;
     grid-template-columns: repeat(3, 1fr);
+	font-family: $font_family2;
 	
   }
   #article0  
@@ -142,25 +147,6 @@ aside
 	
 }
 
-.cards2
- {
-	margin-top: 10%;
-	margin-left: 20%;
-	margin-right: 30%;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-top: 2%;
-	padding-bottom: 5%;
-	margin-bottom: 10%;
-
-	background: #fefefe;
-	border-radius: 5px;
-	overflow: hidden;
-	box-shadow: 0 2px 10px rgba(0,0,0,.1), 3px 5px 20px rgba(0,0,0,.2);
- }
- .cadre3{
-	margin-top: 20%;
- }
 .cards
   {
 	margin-top: 10%;
@@ -424,19 +410,14 @@ padding-top: 5%;
   /****************************************colonne 3 effet****************/
 
 
- .col3 
-{   
-	li
-	{
-	
-    	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	 }
-}
+
 	.html h4 ,
 	.css h4, 
 	.illustrator h4
 	{
 	font-size: 2em;
+	font-family: 'Anton', sans-serif;
+	
 	}
 	.javascript h4 , 
 	.photoshop h4  , 
@@ -444,16 +425,19 @@ padding-top: 5%;
 	.cms h4
 	{
 	font-size: 3em;
+	font-family: 'Anton', sans-serif;
 	}
 	.php h4 ,
 	.csharp h4 
 	{
 	font-size: 2em;
+	font-family: 'Anton', sans-serif;
 
 	}
 	.python h4
 	{
 	font-size:2em;
+	font-family: 'Anton', sans-serif;
 	}
 
 	.html p ,
@@ -468,6 +452,7 @@ padding-top: 5%;
 	.python p
 	{
 	display:none;
+	
 	}
 	.html:hover p ,
 	.css:hover p ,
@@ -483,6 +468,7 @@ padding-top: 5%;
 		display: block;
 		color: red;
 		font-size: 0.9em;
+		font-family: 'Anton', sans-serif;
 	}
 
 
@@ -653,7 +639,27 @@ padding-top: 5%;
   
 	  #article4 {
 		grid-column: span 4;
-		height: 100vh;
+		height: 80vh;
+
+		footer
+		{
+          margin-top: 5%;
+		}
+		
+		.cards2
+		{
+		margin-top: 5%;
+		margin-left: 25%;
+		margin-right: 30%;
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-top: 2%;
+		padding-bottom: 5%;
+        background: #fefefe;
+		border-radius: 5px;
+		overflow: hidden;
+		box-shadow: 0 2px 10px rgba(0,0,0,.1), 3px 5px 20px rgba(0,0,0,.2);
+		}
 	  }
 	  
   
@@ -719,9 +725,11 @@ article {
 }
 /* section demain*/
 
+
 /*footer*/
 footer 
 {
+
    h3 {
 	color: antiquewhite;
    }
@@ -738,8 +746,8 @@ footer
 		color: antiquewhite;
    
 	}
-    max-width: 1000px;
-    margin: 0 auto;
+   
+    margin: 0 ;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -808,8 +816,9 @@ footer
     text-decoration: none;
     color:antiquewhite;
 }
-.services-list a:hover {
-    color: rgb(3,3,3);
+.services-list a:hover ,schedule-list:hover {
+    border-bottom: solid white 1px;
+
 }
 
 
@@ -849,20 +858,3 @@ footer
 }
 
 
-@media screen and (max-width: 600px) {
-    .content-footer {
-        justify-content: center;
-        padding-top: 30px;
-    }
-    .bloc {
-        flex-basis: 70%;
-        /* margin: 10px; */
-    }
-    .footer-contact h3,
-    .footer-services h3,
-    .footer-schedule h3,
-    .footer-medias h3 {
-        padding-bottom: 5px;
-    }
-
-}
