@@ -25,7 +25,6 @@ $light: #CECDCA;
 $dark: #474545;
 $ease: all 0.3s ease-in-out;
 
-
 html
 {
     cursor: url(./cursor.svg),default;
@@ -38,7 +37,7 @@ body
 	font-family: $font_family2;
 	overflow: $overflow;
 	margin: 0;
-	background-color: beige;
+	background-image: url(./pattern_japanese-tile.png);
 }
 .inactive
 {
@@ -147,7 +146,7 @@ aside
 	
 }
 
-.cards
+.cards,.slider__item
   {
 	margin-top: 10%;
 	margin-left: 20%;
@@ -857,4 +856,123 @@ footer
 
 }
 
+/*///////////////////////////////////////pOrtfoliotest////////////////////*/
 
+
+:root {
+	--light: black;
+	--dark: #010101;
+	--grey: #334252;
+  }
+  
+  .slider {
+	width: 100%;
+	max-width: 450px;
+	padding: 2rem 1rem;
+	
+	&__list {
+	  display: flex;
+	  align-items: center;
+	  position: relative;
+	  --heightItem: 400px;
+	  height: var(--heightItem);
+	  top: 0;
+	  left: 0;
+	  transition: all ease .35s;
+	  transform: translateX(0);
+	  
+	  @media (max-width: 767px) {
+		height: auto;
+	  }
+	  // cos of codepen's demo preview
+	  @media (max-height: 700px) {
+		height: auto;
+	  }
+	}
+	&__item {
+	  flex: 0 0 100%;
+	  max-width: 100%;
+	  min-width: 100%;
+	  width: 100%;
+	  height: var(--heightItem);
+	  display: flex;
+	  flex-direction: column;
+	  overflow: hidden;
+	  transition: all ease .35s;
+	  padding-top: 10%;
+	  padding-bottom: 40%;
+	  margin-right: 2rem;
+	  opacity: 0.25;
+	  
+	  @media (max-width: 767px) {
+		height: auto;
+	  }
+	  // cos of codepen's demo preview
+	  @media (max-height: 700px) {
+		height: auto;
+	  }
+	  &.active {
+		opacity: 1;
+	  }
+	}
+	&__nav {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  margin-top: 2rem;
+	}
+	&__dot {
+	  display: block;
+	  width: 1rem;
+	  height: 1rem;
+	  background: var(--light);
+	  transition: all ease .3s;
+	  cursor: pointer;
+	  opacity: 0.25;
+	  margin-right: 0.5rem;
+	  transform-origin: center;
+	  transform: rotate(0);
+	  &.active {
+		opacity: 1;
+	  }
+	  &:hover {
+		transform: rotate(45deg);
+	  }
+	  &:last-child {
+		margin-right: 0;
+	  }
+	}
+  }
+  
+
+  
+  .img {
+	width: 100%;
+	height: calc(var(--heightItem) / 2);
+	max-height: 33vh;
+	object-fit: cover;
+	object-position: center;
+	display: block;
+	margin-bottom: 2rem;
+	flex: auto;
+	clip-path: circle(38.2% at 50% 50%);
+  }
+  .title {
+	font-size: 2rem;
+	line-height: 1.25;
+	font-weight: 400;
+	margin-bottom: 0.5em;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	flex: auto;
+  }
+  .text {
+	font-size: 1rem;
+	line-height: 1.25;
+	font-weight: 400;
+	margin-bottom: 0.5em;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	flex: auto;
+  }
+  

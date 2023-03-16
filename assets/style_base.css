@@ -14,7 +14,7 @@ body {
   font-family: "Roboto", sans-serif;
   overflow: hidden;
   margin: 0;
-  background-color: beige;
+  background-image: url(./pattern_japanese-tile.png);
 }
 
 .inactive {
@@ -87,7 +87,7 @@ aside .hellobis {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1), 3px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-.cards {
+.cards, .slider__item {
   margin-top: 10%;
   margin-left: 20%;
   margin-right: 30%;
@@ -100,25 +100,25 @@ aside .hellobis {
   overflow: hidden;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1), 3px 5px 20px rgba(0, 0, 0, 0.2);
 }
-.cards .card-img {
+.cards .card-img, .slider__item .card-img {
   width: 250px;
   height: 400px;
   background-image: url(https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a20bc6324f6ef2969d9a7cae56b8d4d1&auto=format&fit=crop&w=1350&q=80);
   background-position: 0 center;
   background-size: cover;
 }
-.cards h3 {
+.cards h3, .slider__item h3 {
   font-size: 2em;
 }
-.cards h4 {
+.cards h4, .slider__item h4 {
   font-size: 1.5em;
   padding-bottom: 5%;
 }
-.cards h5 {
+.cards h5, .slider__item h5 {
   font-size: 1em;
   padding-top: 5%;
 }
-.cards p {
+.cards p, .slider__item p {
   font-size: 20px;
 }
 
@@ -657,4 +657,127 @@ footer h3 {
     flex-basis: auto;
     margin: 20px 20px;
   }
+}
+/*///////////////////////////////////////pOrtfoliotest////////////////////*/
+:root {
+  --light: black;
+  --dark: #010101;
+  --grey: #334252;
+}
+
+.slider {
+  width: 100%;
+  max-width: 450px;
+  padding: 2rem 1rem;
+}
+.slider__list {
+  display: flex;
+  align-items: center;
+  position: relative;
+  --heightItem: 400px;
+  height: var(--heightItem);
+  top: 0;
+  left: 0;
+  transition: all ease 0.35s;
+  transform: translateX(0);
+}
+@media (max-width: 767px) {
+  .slider__list {
+    height: auto;
+  }
+}
+@media (max-height: 700px) {
+  .slider__list {
+    height: auto;
+  }
+}
+.slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  height: var(--heightItem);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all ease 0.35s;
+  padding-top: 10%;
+  padding-bottom: 40%;
+  margin-right: 2rem;
+  opacity: 0.25;
+}
+@media (max-width: 767px) {
+  .slider__item {
+    height: auto;
+  }
+}
+@media (max-height: 700px) {
+  .slider__item {
+    height: auto;
+  }
+}
+.slider__item.active {
+  opacity: 1;
+}
+.slider__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.slider__dot {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background: var(--light);
+  transition: all ease 0.3s;
+  cursor: pointer;
+  opacity: 0.25;
+  margin-right: 0.5rem;
+  transform-origin: center;
+  transform: rotate(0);
+}
+.slider__dot.active {
+  opacity: 1;
+}
+.slider__dot:hover {
+  transform: rotate(45deg);
+}
+.slider__dot:last-child {
+  margin-right: 0;
+}
+
+.img {
+  width: 100%;
+  height: calc(var(--heightItem) / 2);
+  max-height: 33vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  display: block;
+  margin-bottom: 2rem;
+  flex: auto;
+  -webkit-clip-path: circle(38.2% at 50% 50%);
+          clip-path: circle(38.2% at 50% 50%);
+}
+
+.title {
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  flex: auto;
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 1.25;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  flex: auto;
 }/*# sourceMappingURL=style_base.css.map */
