@@ -493,6 +493,9 @@ aside .hellobis {
   overflow: hidden;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1), 3px 5px 20px rgba(0, 0, 0, 0.2);
 }
+#article4 .cards2 p {
+  line-height: 1.5em;
+}
 
 nav ul li {
   display: inline-block;
@@ -660,7 +663,7 @@ footer h3 {
 }
 /*///////////////////////////////////////pOrtfoliotest////////////////////*/
 :root {
-  --light: black;
+  --light:black;
   --dark: #010101;
   --grey: #334252;
 }
@@ -726,9 +729,10 @@ footer h3 {
   margin-top: 2rem;
 }
 .slider__dot {
+  margin-top: 160%;
   display: block;
-  width: 1rem;
-  height: 1rem;
+  width: 8rem;
+  height: 2rem;
   background: var(--light);
   transition: all ease 0.3s;
   cursor: pointer;
