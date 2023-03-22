@@ -50,6 +50,7 @@ body
 ///////////////////////////////////////CONTENU PAGE////////////////////////////////////////////////////////////////
 .content0 
 {
+	
 	z-index: 1000;
 	display: flex;
 	justify-content: flex-end;
@@ -652,19 +653,23 @@ padding-top: 5%;
 		margin-right: 30%;
 		padding-left: 5%;
 		padding-right: 5%;
-		padding-top: 2%;
+		padding-top: 1%;
 		padding-bottom: 5%;
         background: #fefefe;
 		border-radius: 5px;
 		overflow: hidden;
 		box-shadow: 0 2px 10px rgba(0,0,0,.1), 3px 5px 20px rgba(0,0,0,.2);
-		p{
+		p
+		{
 			line-height: 1.5em;
+			padding-top: 5%;
+	    }
 			
 		}
+		
 		}
-	  }
-	  
+		
+	
   
 	  // nav styles
 	  nav ul li {
@@ -981,4 +986,6 @@ footer
 	padding-right: 1rem;
 	flex: auto;
   }
+/*---------------------------------------------------Toogle---------------------------------------------------------------------------------------------------------------*/
+ 
   
