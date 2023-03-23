@@ -18,7 +18,68 @@ body {
   margin: 0;
   background-color: #D6D6D6;
 }
+body .switch {
+  padding: 1px;
+  background-color: #0B0909;
+  border-radius: 20px;
+  width: 60px;
+}
+body .switch input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
 
+/*---------------------------------------------------------------Intro animation texte------------------------------------------------------------------------------*/
+@keyframes apparition {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.nom {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.8s 0.2s ease-out forwards;
+}
+
+.fonction {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 1s 0.5s ease-out forwards;
+}
+
+.nav1 {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.9s 0.3s ease-out forwards;
+}
+
+.nav2 {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 1s 0.4s ease-out forwards;
+}
+
+.nav3 {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 1.1s 0.5s ease-out forwards;
+}
+
+.nav4 {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 1.2s 0.6s ease-out forwards;
+}
+
+.nav5 {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 1.3s 0.7s ease-out forwards;
+}
+
+/*Animations////////////////////////////////////////////////////////////////////*/
 .inactive {
   display: none;
 }
@@ -290,6 +351,9 @@ aside .hellobis {
   .container #article1 {
     grid-column: span 4;
     height: 100vh;
+  }
+  .container .contain {
+    float: left;
   }
   .container .columns {
     display: flex;
@@ -792,16 +856,26 @@ footer h3 {
 /*---------------------------------------------------Toogle---------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------Toogle---------------------------------------------------------------------------------------------------------------*/
 body#dark {
-  background-color: #040A18;
+  background-color: black;
   cursor: url(./cursor_dark.svg), default;
   transition: 0.4s;
 }
+body#dark .slider__dot {
+  background-color: #873F49;
+}
 body#dark .about2, body#dark .about3 {
-  border-left: #44444C solid 3px;
+  border-left: #873F49 solid 3px;
 }
 body#dark .switch {
   padding: 1px;
   background-color: #873F49;
+  border-radius: 20px;
+  width: 60px;
+}
+body#dark .switch input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 body#dark #parcours li, body#dark #parcours h4, body#dark .titre_parcours {
   color: #D6D6D6;
@@ -820,7 +894,7 @@ body#dark .cms:hover p,
 body#dark .php:hover p,
 body#dark .csharp:hover p,
 body#dark .python:hover p {
-  color: #44444C;
+  color: #873F49;
 }
 body#dark #article0 .hello, body#dark #article0 .hello0, body#dark #article0 .hello1, body#dark #article0 .hello2, body#dark #article0 .hello3, body#dark #article0 .nom, body#dark #article0 .fonction {
   color: #D6D6D6;
@@ -834,6 +908,9 @@ body#dark .content0 .nom, body#dark .content0 .fonction, body#dark a .nom, body#
 body#dark nav a {
   color: #D6D6D6;
 }
-body#dark nav a:hover {
+body#dark nav li a:hover {
   border-bottom: #873F49 2px;
+}
+body#dark footer {
+  background-color: #873F49;
 }/*# sourceMappingURL=style_base.css.map */

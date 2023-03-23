@@ -1,0 +1,163 @@
+
+/* Set neon effect */
+
+.bouton1,.bouton6 ,.bouton10 {
+    animation: rotate180 4s linear infinite;
+    @keyframes rotate180 {
+    0% {
+    transform: rotate(0deg);
+    }
+    15% {
+    transform: rotate(180deg);
+    }
+    50% {
+    transform: rotate(180deg);
+    }
+    65% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(0deg);
+    }
+    }
+    }
+    
+    .bouton2,.bouton3,.bouton9{
+    transform: rotate(-45deg);
+    animation: rotate45 4s linear infinite;
+    @keyframes rotate45 {
+    0% {
+    transform: rotate(-45deg);
+    }
+    15% {
+    transform: rotate(45deg);
+    }
+    50% {
+    transform: rotate(45deg);
+    }
+    65% {
+    transform: rotate(-45deg);
+    }
+    100% {
+    transform: rotate(-45deg);
+    }
+    }
+    }
+    
+    .bouton1{
+    animation: changebg 2s steps(2, jump-none) infinite;
+    @keyframes changebg {
+    from {
+        background-color: blue;
+       
+    }
+    to {
+       
+        background-color:black;
+        color: blue;
+     border: blue solid 3px;
+     text-shadow: 2px 2px 1px rgba(0,0,0,.1), 0 0 100px #5053f8, 0 0 60px rgb(0, 81, 255), 0 0 80px rgb(0, 255, 200), 0 0 150px rgba(0, 60, 255, 0.75)
+      
+   
+    }
+    }
+    }
+    
+   
+    
+    .bouton5,.bouton8{
+    animation: changewh 2s steps(2, jump-none) infinite;
+    @keyframes changewh {
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color:black;
+        color: blue;
+     border: blue solid 3px;
+     text-shadow: 2px 2px 1px rgba(0,0,0,.1), 0 0 100px #5053f8, 0 0 60px rgb(0, 81, 255), 0 0 80px rgb(0, 255, 200), 0 0 150px rgba(0, 60, 255, 0.75)
+    }
+    }
+    }
+    
+    .bouton5{
+    animation-delay: 1s;
+
+    }
+    .bouton2{
+    animation-delay: 2s;
+    
+    }
+    .bouton1{
+    animation-delay: 2.5s;
+    }
+    
+    .bouton3 {
+    animation-direction: reverse;
+     padding: 30px;
+     background-color:black;
+     color: blue;
+     border: blue solid 3px;
+     text-shadow: 2px 2px 1px rgba(0,0,0,.1), 0 0 100px #5053f8, 0 0 60px rgb(0, 81, 255), 0 0 80px rgb(0, 255, 200), 0 0 150px rgba(0, 60, 255, 0.75)
+
+    }
+    
+    .bouton10{
+    animation-duration: 5s;
+    }
+    .bouton5{
+    animation-duration: 1s;
+    }
+    button
+    {
+        display: flex;
+        flex-direction: column;
+        border-radius: 40px;
+        
+    }
+    .bouton1 ,.bouton8{
+        padding: 30px;
+        font-size: xx-large;
+
+    }
+    .bouton4 , .bouton5 {
+        padding: 30px;
+        font-size: xx-large;
+
+    }
+     .bouton5 {
+        padding: 20px;
+        font-size: medium;
+
+    }
+    .bouton2,.bouton4,.bouton6{
+        padding: 25px;
+        background-color:black;
+        color: blue;
+        border: blue solid 3px;
+        text-shadow: 2px 2px 1px rgba(0,0,0,.1), 0 0 100px #5053f8, 0 0 60px rgb(0, 81, 255), 0 0 80px rgb(0, 255, 200), 0 0 150px rgba(0, 60, 255, 0.75)
+
+    }
+   .bouton7{
+        padding: 35px;
+        background-color:black;
+        color: blue;
+        border: blue solid 3px;
+        text-shadow: 2px 2px 1px rgba(0,0,0,.1), 0 0 100px #5053f8, 0 0 60px rgb(0, 81, 255), 0 0 80px rgb(0, 255, 200), 0 0 150px rgba(0, 60, 255, 0.75)
+
+    }
+    .bouton9,.bouton10
+    {
+        padding: 15px;
+        background-color:black;
+        color: blue;
+        border: blue solid 3px;
+        text-shadow: 2px 2px 1px rgba(0,0,0,.1), 0 0 100px #5053f8, 0 0 60px rgb(0, 81, 255), 0 0 80px rgb(0, 255, 200), 0 0 150px rgba(0, 60, 255, 0.75)
+
+
+    }
+   .container {
+    margin-left: 50%;
+    padding-top: 10%;
+   } 
+    
