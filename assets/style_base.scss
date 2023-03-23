@@ -24,20 +24,29 @@ $secondary: black;
 $light: #CECDCA;
 $dark: #474545;
 $ease: all 0.3s ease-in-out;
+/*------------------Mode----------- dark------------*/
+$light_text :#0B0909;
+$light_background : #F5F5E9;
+$light_border:#873F49;
+  /*------------------Mode----------- light------------*/
+  $dark_background :#040A18;
+  $dark_text : #D6D6D6;
+  $dark_border:#44444C;
 
 html
 {
-    cursor: url(./cursor.svg),default;
+    
     
     scroll-behavior: $scroll_general;
 	
 }
 body
 {
+	cursor: url(./cursor.svg),default;
 	font-family: $font_family2;
 	overflow: $overflow;
 	margin: 0;
-	background-image: url(./pattern_japanese-tile.png);
+	background-color: $dark_text;
 }
 .inactive
 {
@@ -988,4 +997,79 @@ footer
   }
 /*---------------------------------------------------Toogle---------------------------------------------------------------------------------------------------------------*/
  
-  
+  /*---------------------------------------------------Toogle---------------------------------------------------------------------------------------------------------------*/
+
+body#dark
+{
+	background-color: $dark_background;
+	cursor: url(./cursor_dark.svg),default;
+	-webkit-transition: .4s;
+	transition: .4s;
+	.about2 ,.about3
+	{
+	 border-left: $dark_border solid 3px;
+	}
+	.switch {
+		padding: 1px;
+		background-color: #873F49;
+	}
+	#parcours li , #parcours h4 , .titre_parcours{
+		color:$dark_text;
+
+	}
+	.cards1 {
+		box-shadow: 0 2px 10px rgba(255, 255, 255, 0.904), 3px 5px 20px rgba(0,0,0,.2);
+		background-color: #F5F5E9;
+	}
+	.html:hover p ,
+	.css:hover p ,
+	.illustrator:hover p ,
+	.javascript:hover p ,
+	.photoshop:hover p ,
+	.indesign:hover p ,
+	.cms:hover p,
+	.php:hover p ,
+	.csharp:hover p, 
+	.python:hover p 
+	{
+	
+		color: $dark_border;
+		
+	}
+  #article0  
+  {
+	  .hello,.hello0,.hello1,.hello2,.hello3 ,.nom,.fonction
+	  {
+		color:$dark_text;
+	}
+	  
+  }
+.content0 ,a 
+	{
+		color:$dark_text;
+		.nom,.fonction
+		{
+		  color:$dark_text;
+		}
+		
+		
+		
+	}
+	nav 
+	{
+	
+		a {
+			color: $dark_text;
+			
+			
+		}
+		a:hover
+		{
+			border-bottom: $light_border 2px;
+		}
+	
+
+	}
+
+
+  }

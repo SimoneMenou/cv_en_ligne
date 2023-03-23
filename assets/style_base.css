@@ -5,16 +5,18 @@
 /*///////////////////////////////////COMPORTEMENT DES IMAGES///////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////COMPORTEMENT DU SITE///////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////STRUCTURE PORTFOLIO///////////////////////////////////////////////////////////////////*/
+/*------------------Mode----------- dark------------*/
+/*------------------Mode----------- light------------*/
 html {
-  cursor: url(./cursor.svg), default;
   scroll-behavior: smooth;
 }
 
 body {
+  cursor: url(./cursor.svg), default;
   font-family: "Roboto", sans-serif;
   overflow: hidden;
   margin: 0;
-  background-image: url(./pattern_japanese-tile.png);
+  background-color: #D6D6D6;
 }
 
 .inactive {
@@ -785,4 +787,53 @@ footer h3 {
   padding-left: 1rem;
   padding-right: 1rem;
   flex: auto;
+}
+
+/*---------------------------------------------------Toogle---------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------Toogle---------------------------------------------------------------------------------------------------------------*/
+body#dark {
+  background-color: #040A18;
+  cursor: url(./cursor_dark.svg), default;
+  transition: 0.4s;
+}
+body#dark .about2, body#dark .about3 {
+  border-left: #44444C solid 3px;
+}
+body#dark .switch {
+  padding: 1px;
+  background-color: #873F49;
+}
+body#dark #parcours li, body#dark #parcours h4, body#dark .titre_parcours {
+  color: #D6D6D6;
+}
+body#dark .cards1 {
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.904), 3px 5px 20px rgba(0, 0, 0, 0.2);
+  background-color: #F5F5E9;
+}
+body#dark .html:hover p,
+body#dark .css:hover p,
+body#dark .illustrator:hover p,
+body#dark .javascript:hover p,
+body#dark .photoshop:hover p,
+body#dark .indesign:hover p,
+body#dark .cms:hover p,
+body#dark .php:hover p,
+body#dark .csharp:hover p,
+body#dark .python:hover p {
+  color: #44444C;
+}
+body#dark #article0 .hello, body#dark #article0 .hello0, body#dark #article0 .hello1, body#dark #article0 .hello2, body#dark #article0 .hello3, body#dark #article0 .nom, body#dark #article0 .fonction {
+  color: #D6D6D6;
+}
+body#dark .content0, body#dark a {
+  color: #D6D6D6;
+}
+body#dark .content0 .nom, body#dark .content0 .fonction, body#dark a .nom, body#dark a .fonction {
+  color: #D6D6D6;
+}
+body#dark nav a {
+  color: #D6D6D6;
+}
+body#dark nav a:hover {
+  border-bottom: #873F49 2px;
 }/*# sourceMappingURL=style_base.css.map */
