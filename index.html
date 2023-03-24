@@ -11,23 +11,30 @@
     <link rel="stylesheet" href="./assets/style_base.css">
     <link rel="stylesheet" href="./assets/responsive_screen_pc_small.css">
     <link rel="stylesheet" href="./assets/responsive_mobile.css">
-    <title>I am just a baby junior</title>
+    <link rel="stylesheet" href="./.css">
+    <title>Test def</title>
 </head>
-<body>
+<body id="dark">
     <div class="container">
+     
             <header class="content0" role="banner">
               <a class="toggle open" href="#nav">open</a>
-                    
+                  
+              <label class="switch">
+                <input type="checkbox" checked onChange="changeTheme();" id="input">
+                <span class="slider round"></span>
+                <h3 class="mode"></h3>
+              </label>
                 
                   <nav id="nav" role="navigation">  
                     <a class="toggle close" href="#">×</a>
                     <ul><!--Navbar version web ⛔ voir comment switcher vers un menu burger en mobile Nav ne fais partie d'aucuns conteneur -->
                       <!--Conteneur 0 heure librairie luxon-->
-                      <li><a href="#article0">MENEN</a></li>
-                      <li><a href="#article1">PROFIL</a></li>
-                      <li><a href="#parcours">PARCOURS</a></li>
-                      <li> <a href="#portfolio">PORTFOLIO</a></li>
-                      <li> <a href="#demain">DEMAIN</a></li>
+                      <li class="nav1"><a href="#article0">MENEN</a></li>
+                      <li class="nav2"><a href="#article1">PROFIL</a></li>
+                      <li class="nav3"><a href="#parcours">PARCOURS</a></li>
+                      <li class="nav4"><a href="#portfolio">PORTFOLIO</a></li>
+                      <li class="nav5"><a href="#demain">DEMAIN</a></li>
                     </ul>
                   </nav>
                   <!--Conteneur 0 heure librairie luxon-->
@@ -69,11 +76,13 @@
                 
               </div>
             </div>
+         
         </article>
   </section>
 
   <section id="article2" >
       <article id="parcours">
+      
       <!--Section Parcours  -->
       <div class="content3 columns" >
        
@@ -194,7 +203,7 @@
               
           </ul> 
         </div>
-      </div>
+      
   
       </article>
   </section>
@@ -206,69 +215,147 @@
   
   
     <article id="portfolio">
-      <div class="parent">
-        <div class="div1">
-          <button type="submit">
-           <a href="https://simonemenou.github.io/poeme-cabine/">POEME CABINE-JS</a>
-          </button>
+      
+   
+        <div class="slider">
+          <div class="slider__list">
+            <div class="slider__item active" data-slide="1">
+              <img src="./assets/poem_cabine3.jpg" alt="" class="img">
+              <h3 class="title">CABINE A POEME</h3>
+               <p class="text">
+                Je vous présente mon projet de cabine à poème version beta! 
+                Cette cabine génère automatiquement des mots de façon aléatoire 
+                pour créer un vers.
+                </p>
+                <ul>
+                  <li>Temps: 6 heures (2*3heures)</li>
+                  <li>Jours d'apprentissage: 5 jours de JavaScript</li>
+                  <li>Language :HTML,CSS,JavaScript</li>
+                </ul>
+              <a href="https://simonemenou.github.io/poeme-cabine/">DECOUVRIR</a>
+             
+            </div><!--/slider__item-->
+            <div class="slider__item" data-slide="2">
+              <img src="./assets/bouton (1).jpg" alt="" class="img">
+              <h3 class="title">BOUTONS</h3>
+              <p class="text">
+                Decouvrer mes différents boutons du plus basic au plus élaboré.
+                C'est du pure css !
+                </p>
+                <ul>
+                  <li>Temps: 2 heures par page en moyenne</li>
+                  <li>Language :HTML,CSS</li>
+                </ul>
+              <a href="https://simonemenou.github.io/poeme-cabine/">DECOUVRIR</a>
+            </div><!--/slider__item-->
+            <div class="slider__item" data-slide="3">
+              <img src="./assets/template.jpg" alt="" class="img">
+              <h3 class="title">Themes visuels</h3>
+              <p class="text">
+                Des pages Html sur divers themes 
+              </p>
+              <a href="#">DECOUVRIR</a>
+            </div><!--/slider__item-->
+            <div class="slider__item" data-slide="4">
+              <img src="./assets/color (1).jpg" alt="" class="img">
+              <h3 class="title">COLOR MODE</h3>
+              <p class="text">
+                Elements graphique basé sur des jeux de couleurs
+              </p>
+              <a href="#">DECOUVRIR</a>
+            </div><!--/slider__item-->
+            <div class="slider__item" data-slide="5">
+              <img src="./assets/podcast.jpg" alt="" class="img">
+              <h3 class="title">WAVECAST</h3>
+              <p class="text">
+                Projet de fin de formation : Application web de podcast.
+                Le projet consiste à créer une application de podcast qui permettra 
+                aux utilisateurs d'écouter leurs podcasts préférés et aux créateurs
+                 de disposer d'un espace dédié pour y déposer leurs supports de podcast.
+                </p>
+                <ul>
+                  <li>Language: Php Symphony</li>
+                </ul>
+                <a href="#">DECOUVRIR</a>
+            </div><!--/slider__item-->
+            <div class="slider__item" data-slide="6">
+              <img src="./assets/cinema.jpg" alt="" class="img">
+              <h3 class="title">MOVIE</h3>
+              <p class="text">
+                Projet de fin de formation : Application web de podcast.
+                Le projet consiste à créer une application de podcast qui permettra 
+                aux utilisateurs d'écouter leurs podcasts préférés et aux créateurs
+                 de disposer d'un espace dédié pour y déposer leurs supports de podcast.
+              </p>
+              <ul>
+                <li>Temps: 2 heures par page en moyenne</li>
+                <li>Language :HTML,CSS</li>
+              </ul>
+              <a href="#">DECOUVRIR</a>
+            </div><!--/slider__item-->
+            <div class="slider__item" data-slide="7">
+              <img src="./assets/zik.jpg" alt="" class="img">
+              <h3 class="title">BOOK MUSISCIAN</h3>
+              <p class="text">
+                Projet de fin de formation : Application web de podcast.
+                Le projet consiste à créer une application de podcast qui permettra 
+                aux utilisateurs d'écouter leurs podcasts préférés et aux créateurs
+                 de disposer d'un espace dédié pour y déposer leurs supports de podcast.
+              </p>
+              <ul>
+                <li>Temps: 2 heures par page en moyenne</li>
+                <li>Language :HTML,CSS</li>
+              </ul>
+              <a href="#">DECOUVRIR</a>
+            </div><!--/slider__item-->
+            <div class="slider__item" data-slide="8">
+              <img src="./assets/librairie.jpg" alt="" class="img">
+              <h3 class="title">Interface book</h3>
+              <p class="text">
+                Projet de fin de formation : Application web de podcast.
+                Le projet consiste à créer une application de podcast qui permettra 
+                aux utilisateurs d'écouter leurs podcasts préférés et aux créateurs
+                 de disposer d'un espace dédié pour y déposer leurs supports de podcast.
+              </p>
+              <ul>
+                <li>Temps: 2 heures par page en moyenne</li>
+                <li>Language :HTML,CSS</li>
+              </ul>
+              <a href="#">DECOUVRIR</a>
+            </div><!--/slider__item-->
+            <div class="slider__item" data-slide="9">
+              <img src="./assets/animation_.jpg" alt="" class="img">
+              <h3 class="title">JavaScript</h3>
+              <p class="text">
+                Projet de fin de formation : Application web de podcast.
+                Le projet consiste à créer une application de podcast qui permettra 
+                aux utilisateurs d'écouter leurs podcasts préférés et aux créateurs
+                 de disposer d'un espace dédié pour y déposer leurs supports de podcast.
+              </p>
+              <ul>
+                <li>Temps: 2 heures par page en moyenne</li>
+                <li>Language :HTML,CSS</li>
+              </ul>
+              <a href="#">DECOUVRIR</a>
+            </div><!--/slider__item-->
+          </div><!--/slider__list-->
+        </div><!--/slider__list-->
+          
+          
+          <div class="slider__nav">
+            <span class="slider__dot active" data-dot="1"></span>
+            <span class="slider__dot" data-dot="2"></span>
+            <span class="slider__dot" data-dot="3"></span>
+            <span class="slider__dot" data-dot="4"></span>
+            <span class="slider__dot" data-dot="5"></span>
+            <span class="slider__dot" data-dot="6"></span>
+            <span class="slider__dot" data-dot="7"></span>
+            <span class="slider__dot" data-dot="8"></span>
+            <span class="slider__dot" data-dot="9"></span>
+           
+          </div>
         </div>
-        <div class="div2">
-          <button type="submit">
-            <a href="https://simonemenou.github.io/Boutons/">BOUTONS-CSS</a>
-           </button>
-        </div>
-        <div class="div3">
-          <button type="submit">
-            <a href="">🚧En construction</a>
-           </button>
-        </div>
-        <div class="div4">
-          <button type="submit">
-            <a href="">🚧En construction</a>
-           </button>
-        </div>
-        <div class="div5">
-          <button type="submit">
-            <a href="">🚧En construction</a>
-           </button>
-        </div>
-        <div class="div6">
-          <button type="submit">
-            <a href="">🚧En construction</a>
-           </button>
-        </div>
-        <div class="div7">
-          <button type="submit">
-            <a href="">🚧En construction</a>
-           </button>
-        </div>
-        <div class="div8">
-          <button type="submit">
-            <a href="">🚧En construction</a>
-           </button>
-        </div>
-        <div class="div9">
-          <button type="submit">
-            <a href="">🚧En construction</a>
-           </button>
-        </div>
-        <div class="div10">
-          <button type="submit">
-            <a href="">🚧En construction</a>
-           </button>
-        </div>
-        <div class="div11">
-          <button type="submit">
-            <a href="">🚧En construction</a>
-           </button>
-        </div>
-        <div class="div12">
-          <button type="submit">
-            <a href="">🚧En construction</a>
-           </button>
-        </div>
-      </div>
-         
+  
    
   </article>
   </section>
@@ -277,7 +364,7 @@
       <article>
         <div class="content5 " id="demain">
         <div class="cadre3 cards2">
-
+          
          <p class="about5 ">
           Intéressée par les technologies mais aussi par ce qui permet de concilier performance et respect de l'environnement.
            Si la durabilité est un enjeu écologique pour la planète et pour ceux qui l’habitent, c’est aussi un facteur économique important dans le monde entier. 
@@ -338,6 +425,9 @@
 
 <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>  
 <script src="./time.js"></script>
+<script src="./toogle.js"></script>
+<script src="./slider.js"></script>
 <script src="./canvas.js"></script>
 <script src="./portfolio.js"></script>
+<script src="./marquee.js"></script>
 </html>
